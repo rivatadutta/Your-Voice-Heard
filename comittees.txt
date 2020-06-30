@@ -21,13 +21,31 @@ Appropriations
   - Transportation, and Housing and Urban Development, and Related Agencies
   
 Armed Services
+  - Cybersecurity
+  - Emerging Threats and Capabilities
+  - Personnel
+  - Readiness and Management Support
+  - Seapower
+  - Strategic Forces
 
 Budget
  
 Climate Crisis
 
 Education and Labor
+  - Early Childhood, Elementary, and Secondary Education Subcommittee
+  - Health, Employment, Labor, and Pensions Subcommittee
+  - Higher Education and Workforce Investment Subcommittee
+  - Workforce Protections
+  - Civil Rights and Human Services
+  
 Energy and Commerce
+  - Communications & Technology
+  - Consumer Protection & Commerce
+  - Energy
+  - Environment & Climate Change
+  - Health
+  - Oversight and Investigations
 Financial Services
 Foreign Affairs
 Homeland Security
