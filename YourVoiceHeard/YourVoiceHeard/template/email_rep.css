@@ -10,6 +10,7 @@
   overflow: hidden;
 }
 
+/* Creates Transparent Box to contain text when called */
 .box1 {
   font-size: 32px;
   width: 650px;
@@ -18,6 +19,7 @@
   margin: 0;
 }
 
+/* Creates Solid Black Box to contain text when called */
 .box2 {
   font-size: 16px;
   width: 130px;
@@ -27,11 +29,15 @@
   margin: 0;
 }
 
+/* Creates arrow when called and makes arrow clickable
+also changes cursor to point when mouse is on arrow */
 #upArrow{
   width: 15px;
   cursor: pointer;
 }
 
+/* Creates arrow when called and makes arrow clickable
+also changes cursor to point when mouse is on arrow */
 #downArrow{
   width: 15px;
   cursor: pointer;
