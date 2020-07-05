@@ -25,12 +25,13 @@ SECRET_KEY = ''
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['34.94.213.201']
+ALLOWED_HOSTS = ['localhost', '34.94.213.201']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'emailreps.apps.EmailrepsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
