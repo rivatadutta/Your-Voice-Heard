@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Creates Solid Black Box to contain text when called */
+.box1 {
+  font-size: 32px;
+  width: 650px;
+  padding: 40px;
+  border: 3px solid black;
+  margin: 0;
+}
+
+/* Creates Transparent Box to contain text when called */
+.box2 {
+  font-size: 24px;
+  width: 400px;
+  padding: 10px;
+  border: 3px solid transparent;
+  margin: 0;
+}
+
+/* Creates Transparent Box to contain text when called */
+.box3 {
+  font-size: 24px;
+  width: 400px;
+  padding: 10px;
+  border: 3px solid transparent;
+  margin: 0;
+}
+
+/* Creates Solid Black Box to contain text when called */
+.box4 {
+  font-size: 24px;
+  width: 200px;
+  padding: 10px;
+  border: 3px solid black;
+  margin: 0;
+}
+
+/* Creates Transparent Box to contain text when called */
+.box5 {
+  font-size: 16px;
+  width: 270px;
+  padding: 10px;
+  border: 3px solid transparent;
+  margin: 0;
+}
