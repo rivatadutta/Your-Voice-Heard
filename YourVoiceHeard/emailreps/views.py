@@ -16,3 +16,7 @@ def senator_page(request):
 def propose_vote_issues(request):
     context = {}
     return render(request, 'propose_vote_issues.html', context)
+
+def reps_page(request):
+    context = {}
+    return render(request, 'reps_page.html', context)
