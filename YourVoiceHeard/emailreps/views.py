@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Senator, Representative, Issue
 
 # Create your views here.
 def index(request):
@@ -18,5 +19,6 @@ def propose_vote_issues(request):
     return render(request, 'propose_vote_issues.html', context)
 
 def reps_page(request):
-    context = {}
+    reps = Representative.objects.all()
+    context = {'reps': reps}
     return render(request, 'RepsPage.html', context)
