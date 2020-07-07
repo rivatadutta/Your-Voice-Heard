@@ -11,7 +11,8 @@ def contact_reps(request):
     return render(request, 'email_rep.html', context)
 
 def senator_page(request):
-    context = {}
+    senators = Senator.objects.all()
+    context = {'senators': senators}
     return render(request, 'SenatorPage.html', context)
 
 def propose_vote_issues(request):
