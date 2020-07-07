@@ -38,7 +38,7 @@
 
         <!-- Hyperlink that takes user to page where they can contact senators
         (Currently takes to file "email_rep.html")-->
-        <a href="email_rep.html"><h3>EMAIL TO MAKE A DIFFERENCE</h3></a>
+        <a href="{% url 'emailreps:contact_reps' %}"><h3>EMAIL TO MAKE A DIFFERENCE</h3></a>
 
       </div>
 
@@ -49,21 +49,21 @@
 
         <!-- Hyperlink that takes user to page where they can contact Santa Cruz
         officials (Currently takes to file "email_rep.html")-->
-        <a href="propose_vote_issues.html"><h3>WHAT ISSUES NEED TO BE HEARD?</h3></a>
+        <a href="{% url 'emailreps:propose_vote_issues' %}"><h3>WHAT ISSUES NEED TO BE HEARD?</h3></a>
       </div>
 
       <div class="box3" style="position:relative; left:510px; top:200px;
         text-align:center">
 
-        <!-- takes you to know about your senators--!>
-        <a href="SenatorPage.html"><h3>ABOUT YOUR CA SENATORS</h3></a>
+        <!-- takes you to know about your senators-->
+        <a href="{% url 'emailreps:SenatorPage' %}"><h3>ABOUT YOUR CA SENATORS</h3></a>
       </div>
 
       <div class="box3" style="position:relative; left:510px; top:240px;
         text-align:center">
 
-        <!-- takes you to know about your reps--!>
-        <a href="RepsPage.html"><h3>ABOUT YOUR CA REPRESENTATIVES</h3></a>
+        <!-- takes you to know about your reps-->
+        <a href="{% url 'emailreps:RepsPage' %}"><h3>ABOUT YOUR CA REPRESENTATIVES</h3></a>
       </div>
 
 
@@ -74,7 +74,7 @@
 
         <!-- Hyperlink that takes user to page where they can go to forum page
         (Currently takes to file "email_rep.html")-->
-        <a href="email_rep.html"><h4>CLICK FOR FORUM PAGE</h4></a>
+        <a href="{% url 'emailreps:contact_reps' %}"><h4>CLICK FOR FORUM PAGE</h4></a>
       </div>
       <!--
        Links to construction of transparent box in CSS file via class
