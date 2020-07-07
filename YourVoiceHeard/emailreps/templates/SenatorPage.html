@@ -15,20 +15,18 @@
         <h1><i>About your California Senators</i></h1>
     </div>
 
-    <div class="name" style ="text-align: center; position: relative; left:220px; top: 60px;">
-        <h2>Kamala Harris</h2>
+    <div class="name" style ="position: relative; left:220px; top: 60px;">
+        {% for senator in senators %}
+            <h2>{{ senator.senator_name }}</h2>
+        {% endfor %}
+        
     </div>
 
-    <div class="name" style ="text-align: center; position: relative; left:640px; top: 60px">
-        <h2>Dianne Feinstein</h2>
-    </div>
-
-    <p><img src="Images/harris.jpg" alt="Harris Headshot"
+    <!--<p><img src="Images/harris.jpg" alt="Harris Headshot"
             style="position: relative; left: 110px; top: 120px; width:150px;height:220px; border: 10px solid white; padding: 2px transparent"></p>
 
-    <div class="about" style = position:relative; left: 300px; top; 160px">
 
-    </div>
+    </div>!-->
 
 
 
