@@ -28,7 +28,7 @@ def reps_page(request):
     
 def make_issue(request):
     issue_form = IssueForm()
-    curr_issues = Issue.objects.all()
+    curr_issues = reversed(Issue.objects.all())
     context = {'issue_form': issue_form, 'issues': curr_issues}
     return render(request, 'make_issue.html', context)
 

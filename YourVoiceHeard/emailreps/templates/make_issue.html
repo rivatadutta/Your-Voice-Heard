@@ -1,10 +1,49 @@
+{% load static %}
+<link rel="stylesheet"type="text/css" href="{% static 'CSS/bulma.css' %}">
+<div class="container">
 <form action="{% url 'emailreps:post_issue' %}" method="POST" role="form">
 	{% csrf_token %}
-	{{issue_form}}
-	<button type="submit">SUBMIT</button>
+	<div class="field">
+		<label for="issname" class="label"> Issue Title </label>
+		<div class="control">
+		
+		{{issue_form.issue_name}}
+		</div>
+	</div>
+	<div class="field">
+		<label for="isstxt" class="label"> Issue Title </label>
+		<div class="control">
+		
+		{{issue_form.issue_text}}
+		</div>
+	</div>
+	<button class="button is-link" type="submit">SUBMIT</button>
 </form>
+</div>
+
+<div class="container">
+<div class="tile is-ancestor">
+	<div class="tile is-vertical">
+		<div class="tile is-parent is-vertical">
+		{% for issue in issues %}
+			<div class="tile is-child box">
+				<p class="title"> {{issue.issue_name}} </p>
+				<p class="subtitle"> {{issue.issue_text}} </p>
+			</div>
+		{% endfor %}
+		</div>
+	</div>
+</div>
+</div>
+
+
+
 
 <ul>
-
-
+	{% for issue in issues %}
+		<li> {{issue.issue_name}} </li>
+		<ul>
+			<li> {{issue.issue_text}} </li>
+		</ul>
+	{% endfor %}
 </ul>
