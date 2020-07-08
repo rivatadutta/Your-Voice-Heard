@@ -5,5 +5,11 @@ class IssueForm(forms.ModelForm):
     class Meta:
         model = Issue
         fields = ['issue_name', 'issue_text']
-        #widgets = { 'issue_name':}
+        widgets = {
+            'issue_name': forms.TextInput(
+            attrs={'id': 'issname', 'class':'input', 'placeholder': 'Name of your issue', 'aria-label' : 'Issue Title'}),
+            
+            'issue_text': forms.Textarea(
+            attrs={'id': 'isstxt', 'class':'input', 'placeholder': 'Enter the description of your issue', 'aria-label' : 'Issue Text'})
+        }
     
