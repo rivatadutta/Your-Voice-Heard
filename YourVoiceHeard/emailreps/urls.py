@@ -9,4 +9,6 @@ urlpatterns = [
     path('aboutsenators', views.senator_page, name='SenatorPage'),
     path('proposeissues', views.propose_vote_issues, name='propose_vote_issues'),
     path('aboutreps', views.reps_page, name='RepsPage'),
+    path('makeissue', views.make_issue, name='make_issue'),
+    path('postissue', views.add_issue, name='post_issue'),
 ]

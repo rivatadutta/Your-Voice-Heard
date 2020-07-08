@@ -1,0 +1,10 @@
+<form action="{% url 'emailreps:post_issue' %}" method="POST" role="form">
+	{% csrf_token %}
+	{{issue_form}}
+	<button type="submit">SUBMIT</button>
+</form>
+
+<ul>
+
+
+</ul>
