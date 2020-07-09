@@ -2,24 +2,31 @@ from django.shortcuts import render
 from .models import Senator, Representative, Issue
 
 # Create your views here.
+
 def index(request):
     context = {}
     return render(request, 'index.html', context)
 
-def contact_reps(request):
+def blm(request):
     context = {}
-    return render(request, 'email_rep.html', context)
+    return render(request, 'blm.html', context)
 
-def senator_page(request):
-    senators = Senator.objects.all()
-    context = {'senators': senators}
-    return render(request, 'SenatorPage.html', context)
-
-def propose_vote_issues(request):
+def ice(request):
     context = {}
-    return render(request, 'propose_vote_issues.html', context)
+    return render(request, 'ice.html', context)
 
-def reps_page(request):
-    reps = Representative.objects.all()
-    context = {'reps': reps}
-    return render(request, 'RepsPage.html', context)
+def yemen(request):
+    context = {}
+    return render(request, 'yemen.html', context)
+
+def climatechange(request):
+    context = {}
+    return render(request, 'climatechange.html', context)
+
+def proposeissues(request):
+    context = {}
+    return render(request, 'proposeissues.html', context)
+
+
+
+

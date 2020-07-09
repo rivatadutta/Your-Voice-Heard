@@ -5,8 +5,9 @@ from . import views
 app_name = 'emailreps'
 urlpatterns = [
     path('', views.index, name='index'),
-    path('emailofficials', views.contact_reps, name='contact_reps'),
-    path('aboutsenators', views.senator_page, name='SenatorPage'),
-    path('proposeissues', views.propose_vote_issues, name='propose_vote_issues'),
-    path('aboutreps', views.reps_page, name='RepsPage'),
-]
+    path('ice', views.ice, name='ice'),
+    path('blm', views.blm, name='blm'),
+    path('proposeissues', views.proposeissues, name='proposeissues'),
+    path('climatechange', views.climatechange, name='climatechange'),
+    path('yemen', views.yemen, name='yemen'),
+    ]
