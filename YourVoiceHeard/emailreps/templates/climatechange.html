@@ -56,13 +56,13 @@
             <div class="container">
                 <div class="row">
                     <div class="logo_section">
-                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image"></a>
+                        <a class="navbar-brand" href="index.html"><img src="{% static 'website/images/logo.jpg' %}" alt="image"></a>
                     </div>
                     <div class="site_information">
                         <ul>
-                            <li><a href="mailto:exchang@gmail.com"><img src="{% static 'website/images/mail_icon.png' %}" alt="#" />exchang@gmail.com</a></li>
-                            <li><a href="tel:exchang@gmail.com"><img src="{% static 'website/images/phone_icon.png' %}" alt="#" />+7123569847</a></li>
-                            <li><a class="join_bt" href="#">Join us</a></li>
+                            <li><a href="mailto:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/mail_icon.png' %}" alt="#" />yourvoiceheard115@gmail.com</a></li>
+                            <li><a href="tel:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/phone_icon.png' %}" alt="#" />N/A</a></li>
+                            <li><a class="join_bt" href="#">We need your voice</a></li>
                         </ul>
                     </div>
                 </div>
@@ -82,22 +82,16 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link active" href="{% url 'emailreps:index' %}">Home</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:index' %}">Home</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:blm' %}">#BLM</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:ice' %}">ICE</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:yemen' %}">Yemen</a></li>
-                        <li><a class="nav-link" href="{% url 'emailreps:climatechange' %}">Climate Change</a></li>
+                        <li><a class="nav-link active" href="{% url 'emailreps:climatechange' %}">Climate Change</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:proposeissues' %}">Propose Your Issues?</a></li>
                     </ul>
                 </div>
                      </div>
                  </nav>
-                 <div class="search-box">
-                    <input type="text" class="search-txt" placeholder="Search">
-                    <a class="search-btn">
-                        <img src="{% static 'website/images/search_icon.png' %}" alt="#" />
-                    </a>
-                </div>
                 </div>
             </div>
           </div>

@@ -329,7 +329,7 @@ button:focus {
 }
 
 a:hover,a:focus {
-    color: #ffe6cc;
+    color: transparent;
     text-decoration: underline;
 }
 
@@ -413,7 +413,7 @@ a.join_bt:focus {
     z-index: 20;
     background-position: left;
     background-repeat: no-repeat;
-    background-color: #ffe6cc;
+    background-color: transparent;
     background-size: auto 100%;
     width: 100%;
 }
@@ -491,7 +491,7 @@ a.navbar-brand {
     display: block;
     right: 0;
     content: "";
-    background: #ffe6cc;
+    background: transparent;
     height: 60px;
     position: absolute;
     top: 0;
@@ -606,7 +606,7 @@ a.navbar-brand {
     position: relative;
     content: "";
     display: block;
-    background: #ffe6cc;
+    background: transparent;
     left: -35px;
     transform: skew(30deg);
 
@@ -2097,7 +2097,7 @@ ul.social_icon li {
 
 .inner_page .inner_page_header {
 
-    background: #ffe6cc;
+    background: transparent;
     padding: 40px 0;
 
 }

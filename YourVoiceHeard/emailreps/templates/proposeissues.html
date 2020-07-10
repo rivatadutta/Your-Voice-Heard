@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <!-- Basic -->
@@ -10,7 +11,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Site Metas -->
-    <title>Exchange Currency - Responsive HTML5 Template</title>
+    <title>Your Voice Heard - Propose Issues</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -20,15 +21,15 @@
     <link rel="apple-touch-icon" href="#" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css' %}" />
     <!-- Pogo Slider CSS -->
-    <link rel="stylesheet" href="css/pogo-slider.min.css" />
+    <link rel="stylesheet" href="{% static 'website/css/pogo-slider.min.css' %}" />
     <!-- Site CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}" />
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="{% static 'website/css/responsive.css' %}" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="{% static 'website/css/custom.css' %}" />
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -55,13 +56,13 @@
             <div class="container">
                 <div class="row">
                     <div class="logo_section">
-                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image"></a>
+                        <a class="navbar-brand" href="index.html"><img src="{% static 'website/images/logo.jpg' %}" alt="image"></a>
                     </div>
                     <div class="site_information">
                         <ul>
-                            <li><a href="mailto:exchang@gmail.com"><img src="images/mail_icon.png" alt="#" />exchang@gmail.com</a></li>
-                            <li><a href="tel:exchang@gmail.com"><img src="images/phone_icon.png" alt="#" />+7123569847</a></li>
-                            <li><a class="join_bt" href="#">Join us</a></li>
+                            <li><a href="mailto:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/mail_icon.png' %}" alt="#" />yourvoiceheard115@gmail.com</a></li>
+                            <li><a href="tel:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/phone_icon.png' %}" alt="#" />N/A</a></li>
+                            <li><a class="join_bt" href="#">We need your voice</a></li>
                         </ul>
                     </div>
                 </div>
@@ -81,22 +82,16 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link active" href="{% url 'emailreps:index' %}">Home</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:index' %}">Home</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:blm' %}">#BLM</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:ice' %}">ICE</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:yemen' %}">Yemen</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:climatechange' %}">Climate Change</a></li>
-                        <li><a class="nav-link" href="{% url 'emailreps:proposeissues' %}">Propose Your Issues?</a></li>
+                        <li><a class="nav-link active" href="{% url 'emailreps:proposeissues' %}">Propose Your Issues?</a></li>
                     </ul>
                 </div>
                      </div>
                  </nav>
-                 <div class="search-box">
-                    <input type="text" class="search-txt" placeholder="Search">
-                    <a class="search-btn">
-                        <img src="images/search_icon.png" alt="#" />
-                    </a>
-                </div> 
                 </div>
             </div>
           </div>
