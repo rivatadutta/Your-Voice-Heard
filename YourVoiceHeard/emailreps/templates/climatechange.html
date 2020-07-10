@@ -82,12 +82,12 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link" href="index.html">Home</a></li>
-                        <li><a class="nav-link" href="about.html">About</a></li>
-                        <li><a class="nav-link" href="exchange.html">Exchange</a></li>
-                        <li><a class="nav-link" href="services.html">Services</a></li>
-                        <li><a class="nav-link" href="new.html">News</a></li>
-                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li><a class="nav-link active" href="{% url 'emailreps:index' %}">Home</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:blm' %}">#BLM</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:ice' %}">ICE</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:yemen' %}">Yemen</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:climatechange' %}">Climate Change</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:proposeissues' %}">Propose Your Issues?</a></li>
                     </ul>
                 </div>
                      </div>
@@ -272,19 +272,20 @@
     <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
 
     <!-- ALL JS FILES -->
-    <script src="js/jquery.min.js"></script>
-	<script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{% static 'website/js/jquery.min.js' %}"></script>
+	<script src="{% static 'website/js/popper.min.js' %}"></script>
+    <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+	
     <!-- ALL PLUGINS -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.pogo-slider.min.js"></script>
-    <script src="js/slider-index.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
-    <script src="js/isotope.min.js"></script>
-    <script src="js/images-loded.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'website/js/jquery.pogo-slider.min.js' %}"></script>
+    <script src="{% static 'website/js/slider-index.js' %}"></script>
+    <script src="{% static 'website/js/smoothscroll.js' %}"></script>
+    <script src="{% static 'website/js/form-validator.min.js' %}"></script>
+    <script src="{% static 'website/js/contact-form-script.js' %}"></script>
+    <script src="{% static 'website/js/isotope.min.js' %}"></script>
+    <script src="{% static 'website/js/images-loded.min.js' %}"></script>
+    <script src="{% static 'website/js/custom.js' %}"></script>
 	
 </body>
 
