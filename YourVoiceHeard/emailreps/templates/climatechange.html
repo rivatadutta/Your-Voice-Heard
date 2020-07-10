@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Site Metas -->
-    <title>Exchange Currency - Responsive HTML5 Template</title>
+    <title>Your Voice Heard - Climate Change</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -56,7 +56,7 @@
             <div class="container">
                 <div class="row">
                     <div class="logo_section">
-                        <a class="navbar-brand" href="index.html"><img src="{% static 'website/images/logo.jpg' %}" alt="image"></a>
+                        <a class="navbar-brand" href="{% url 'emailreps:index' %}"><img src="{% static 'website/images/logo.jpg' %}" alt="image"></a>
                     </div>
                     <div class="site_information">
                         <ul>
@@ -202,7 +202,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-6 col-lg-3">
                             <div class="full">
-                                <img class="img-responsive" src=""{% static 'website/images/footer_logo.png' %}" alt="#" />
+                                <img class="img-responsive" src="{% static 'website/images/footer_logo.png' %}" alt="#" />
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
@@ -211,12 +211,7 @@
                             </div>
                             <div class="full">
                                 <ul class="menu_footer">
-                                    <li><a href="home.html">> Home</a></li>
-                                    <li><a href="about.html">> About</a></li>
-                                    <li><a href="exchange.html">> Exchange</a></li>
-                                    <li><a href="services.html">> Services</a></li>
-                                    <li><a href="new.html">> New</a></li>
-                                    <li><a href="contact.html">> Contact</a></li>
+                                    <li><a href="{% url 'emailreps:index' %}">> Home</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -239,9 +234,9 @@
                                 <div class="footer_blog full white_fonts">
                              <h3>Contact us</h3>
                              <ul class="full">
-                               <li><img src="{% static 'website/images/i5.png' %}"><span>London 145<br>United Kingdom</span></li>
-                               <li><img src="{% static 'website/images/i6.png' %}"><span>demo@gmail.com</span></li>
-                               <li><img src="{% static 'website/images/i7.png' %}"><span>+12586954775</span></li>
+                                <li><img src="{% static 'website/images/i5.png' %}"><span>California<br>United States</span></li>
+                                <li><img src="{% static 'website/images/i6.png' %}"><span>yourvoiceheard115@gmail.com</span></li>
+                                <li><img src="{% static 'website/images/i7.png' %}"><span>Number N/A</span></li>
                              </ul>
                          </div>
                             </div>
