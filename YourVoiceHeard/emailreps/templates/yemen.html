@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Site Metas -->
-    <title>Exchange Currency - Responsive HTML5 Template</title>
+    <title>Your Voice Heard - Yemen</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -49,14 +49,14 @@
     <!-- end loader -->
     <!-- END LOADER -->
 
-    <!-- Start header -->
+   <!-- Start header -->
     <header class="top-header">
         <div class="header_top">
 
             <div class="container">
                 <div class="row">
                     <div class="logo_section">
-                        <a class="navbar-brand" href="index.html"><img src="{% static 'website/images/logo.jpg' %}" alt="image"></a>
+                        <a class="navbar-brand" href="{% url 'emailreps:index' %}"><img src="{% static 'website/images/logo.jpg' %}" alt="image"></a>
                     </div>
                     <div class="site_information">
                         <ul>
@@ -72,7 +72,7 @@
         <div class="header_bottom">
           <div class="container">
             <div class="col-sm-12">
-                <div class="menu_orange_section" style="background: #ff880e;">
+                <div class="menu_orange_section">
                    <nav class="navbar header-nav navbar-expand-lg">
                      <div class="menu_section">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,11 +82,13 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link" href="{% url 'emailreps:index' %}">Home</a></li>
+                        <li><a class="nav-link active" href="{% url 'emailreps:index' %}">Home</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:blm' %}">#BLM</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:ice' %}">ICE</a></li>
-                        <li><a class="nav-link active" href="{% url 'emailreps:yemen' %}">Yemen</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:yemen' %}">Yemen</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:climatechange' %}">Climate Change</a></li>
+                         <li><a class="nav-link" href="{% url 'emailreps:2020elections' %}">2020 Elections</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:caofficals' %}">About CA Officals</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:proposeissues' %}">Propose Your Issues?</a></li>
                     </ul>
                 </div>
@@ -100,19 +102,7 @@
     </header>
     <!-- End header -->
 
-    <!-- Start Banner -->
-    <div class="section inner_page_banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="banner_title">
-                        <h3>Yemen</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Banner -->
+
 
     <!-- section -->
     <div class="section layout_padding about_bg">
@@ -126,6 +116,9 @@
                     </div>
                     <div class="full paddding_left_15">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                    <div class="full paddding_left_15">
+                        <a class="main_bt" href="#">Read More ></a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -150,14 +143,14 @@
                 <div class="col-md-6 layout_padding">
                     <div class="full paddding_left_15">
                         <div class="heading_main text_align_left">
-						   <h2><span class="theme_color">Email</h2>
+						   <h2><span class="theme_color">Welcome</span> To Exchange</h2>
                         </div>
                     </div>
                     <div class="full paddding_left_15">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </div>
                     <div class="full paddding_left_15">
-                        <a class="main_bt" href="#">Email></a>
+                        <a class="main_bt" href="#">About more ></a>
                     </div>
                 </div>
             </div>
@@ -166,28 +159,30 @@
 	<!-- end section -->
 
     <!-- section -->
-   <div class="section layout_padding about_bg">
+    <div class="section white_fonts" style="background: #111;">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" style="background: #fff;">
+                    <div class="full text_align_right_img">
+                        <img src="{% static 'website/images/img2.png' %}" alt="#" />
+                    </div>
+                </div>
+                <div class="col-md-6 layout_padding">
                     <div class="full paddding_left_15">
                         <div class="heading_main text_align_left">
-                           <h2>Petitions</h2>
+                           <h2><span class="theme_color">Apply for</span> Exchange</h2>
                         </div>
                     </div>
                     <div class="full paddding_left_15">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="full text_align_right_img">
-                        <img src=""{% static 'website/images/img3.png' %}" alt="#" />
+                    <div class="full paddding_left_15">
+                        <a class="main_bt" href="#">Exchange ></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end section -->
     <!-- end section -->
     <!-- Start Footer -->
     <footer class="footer-box">
@@ -197,7 +192,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-6 col-lg-3">
                             <div class="full">
-                                <img class="img-responsive" src=""{% static 'website/images/footer_logo.png' %}" alt="#" />
+                                <img class="img-responsive" src="{% static 'website/images/footer_logo.png' %}" alt="#" />
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
@@ -206,12 +201,7 @@
                             </div>
                             <div class="full">
                                 <ul class="menu_footer">
-                                    <li><a href="home.html">> Home</a></li>
-                                    <li><a href="about.html">> About</a></li>
-                                    <li><a href="exchange.html">> Exchange</a></li>
-                                    <li><a href="services.html">> Services</a></li>
-                                    <li><a href="new.html">> New</a></li>
-                                    <li><a href="contact.html">> Contact</a></li>
+                                    <li><a href="{% url 'emailreps:index' %}">> Home</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -234,9 +224,9 @@
                                 <div class="footer_blog full white_fonts">
                              <h3>Contact us</h3>
                              <ul class="full">
-                               <li><img src="{% static 'website/images/i5.png' %}"><span>London 145<br>United Kingdom</span></li>
-                               <li><img src="{% static 'website/images/i6.png' %}"><span>demo@gmail.com</span></li>
-                               <li><img src="{% static 'website/images/i7.png' %}"><span>+12586954775</span></li>
+                               <li><img src="{% static 'website/images/i5.png' %}"><span>California<br>United States</span></li>
+                               <li><img src="{% static 'website/images/i6.png' %}"><span>yourvoiceheard115@gmail.com</span></li>
+                               <li><img src="{% static 'website/images/i7.png' %}"><span>Number N/A</span></li>
                              </ul>
                          </div>
                             </div>
