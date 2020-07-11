@@ -58,3 +58,4 @@ def add_issue(request):
         #new_issue.save()
         new_issue = form.save()
     return redirect('emailreps:make_issue')
+
