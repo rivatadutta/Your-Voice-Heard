@@ -29,10 +29,19 @@ def proposeissues(request):
     context = {}
     return render(request, 'proposeissues.html', context)
 
+def caofficals(request):
+    context = {}
+    return render(request, 'caofficals.html', context)
+
+def elections2020(request):
+    context = {}
+    return render(request, '2020elections.html', context)
+
 def reps_page(request):
     reps = Representative.objects.all()
     context = {'reps': reps}
     return render(request, 'RepsPage.html', context)
+
     
 def make_issue(request):
     issue_form = IssueForm()
