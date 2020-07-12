@@ -1,3 +1,4 @@
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -72,8 +73,8 @@
         <div class="header_bottom">
           <div class="container">
             <div class="col-sm-12">
-                <div class="menu_orange_section" style="background: #ff880e;">
-                   <nav class="navbar header-nav navbar-expand-lg"> 
+                <div class="menu_orange_section">
+                   <nav class="navbar header-nav navbar-expand-lg">
                      <div class="menu_section">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
@@ -82,11 +83,13 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link" href="{% url 'emailreps:index' %}">Home</a></li>
-                        <li><a class="nav-link active" href="{% url 'emailreps:blm' %}">#BLM</a></li>
+                        <li><a class="nav-link active" href="{% url 'emailreps:index' %}">Home</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:blm' %}">#BLM</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:ice' %}">ICE</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:yemen' %}">Yemen</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:climatechange' %}">Climate Change</a></li>
+                         <li><a class="nav-link" href="{% url 'emailreps:2020elections' %}">2020 Elections</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:caofficals' %}">About CA Officals</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:proposeissues' %}">Propose Your Issues?</a></li>
                     </ul>
                 </div>
@@ -96,7 +99,7 @@
             </div>
           </div>
         </div>
-        
+
     </header>
     <!-- End header -->
 
@@ -277,5 +280,6 @@
     <script src="{% static 'website/js/custom.js' %}"></script>
 	
 </body>
+
 
 </html>

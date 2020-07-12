@@ -40,6 +40,7 @@
 
 <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
+
     <!-- LOADER -->
     <div id="preloader">
         <div class="loader">
@@ -72,7 +73,7 @@
         <div class="header_bottom">
           <div class="container">
             <div class="col-sm-12">
-                <div class="menu_orange_section" style="background: #ff880e;">
+                <div class="menu_orange_section">
                    <nav class="navbar header-nav navbar-expand-lg"> 
                      <div class="menu_section">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,6 +88,8 @@
                         <li><a class="nav-link" href="{% url 'emailreps:ice' %}">ICE</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:yemen' %}">Yemen</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:climatechange' %}">Climate Change</a></li>
+                         <li><a class="nav-link" href="{% url 'emailreps:2020elections' %}">2020 Elections</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:caofficals' %}">About CA Officals</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:proposeissues' %}">Propose Your Issues?</a></li>
                     </ul>
                 </div>
@@ -110,7 +113,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="slide_text white_fonts">
-                                        <h3>YOUR VOICE<br><strong>HEARD</strong></h3>
+                                        <h3>YOUR VOICE HEARD</h3>
                                         <br>
                                     </div>
                                 </div>
@@ -122,9 +125,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="slide_text white_fonts">
-                                        <h3>Silence is<br><i>Violence</i></h3>
-                                        <br>
-                                        <a class="start_exchange_bt" href="exchange.html">Help the cause></a>
+                                        <h3>Silence is <br><strong><i>Violence</i></strong></h3>
                                     </div>
                                 </div>
                             </div>
@@ -139,11 +140,12 @@
     
 	<!-- BLM section -->
     <div class="section">
-        <div class="container">
+        <br><br><br>
+        <div class="container" style="padding: 15px; border-top: solid 1px #b01c1c; border-bottom: solid 1px #b01c1c">
             <div class="row">
                 <div class="col-md-6">
                     <div class="full text_align_right_img">
-                        <img src="{% static 'website/images/blmindex.jpg' %}" alt="#" />
+                        <br><br><img src="{% static 'website/images/blmindex.jpg' %}" alt="#" />
                     </div>
                 </div>
                 <div class="col-md-6 layout_padding">
@@ -167,24 +169,26 @@
 
     <!-- ICE section -->
     <div class="section layout_padding about_bg">
-        <div class="container">
+        <div class="container" style="padding: 5px; border-bottom: solid 1px #b01c1c">
             <div class="row">
                 <div class="col-md-6">
                     <div class="full paddding_left_15">
                         <div class="heading_main text_align_left">
-                           <h2>ICE</h2>
+                           <h2>International Students<br><span class="theme_color">versus ICE</span></h2>
                         </div>
                     </div>
                     <div class="full paddding_left_15">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </div>
-                    <div class="full paddding_left_15">
-                        <a class="main_bt" href="#">Sign Petitions and Email></a>
+                    <div class="full paddding_left_15 padding_bottom">
+                        <a class="main_bt padding" href="#">Sign Petitions and Email></a>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="full text_align_right_img">
-                        <img src="{% static 'website/images/img3.png' %}" alt="#" />
+                    <div class="full paddding_left_15 padding_bottom">
+                        <div class="full text_align_right_img">
+                            <img src="{% static 'website/images/iceindex.jpg' %}" alt="#" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -194,7 +198,7 @@
 
     <!-- YEMEN section -->
     <div class="section">
-        <div class="container">
+        <div class="container" style="padding: 5px; border-bottom: solid 1px #b01c1c">
             <div class="row">
                 <div class="col-md-6">
                     <div class="full text_align_right_img">
@@ -221,7 +225,7 @@
 
     <!-- Climate Change section -->
     <div class="section layout_padding about_bg">
-        <div class="container">
+        <div class="container" style="padding:5px; border-bottom: solid 1px #b01c1c">
             <div class="row">
                 <div class="col-md-6">
                     <div class="full paddding_left_15">
@@ -238,7 +242,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="full text_align_right_img">
-                        <img src="{% static 'website/images/img3.png' %}" alt="#" />
+                        <img src="{% static 'website/images/climchangeindex.jpg' %}" alt="#" />
                     </div>
                 </div>
             </div>
@@ -246,42 +250,16 @@
     </div>
     <!-- end section -->
 
-
-    <!-- REPS section -->
-    <div class="section white_fonts" style="background: #2a2a2a;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6" style="background: #2a2a2a;">
-                    <div class="full text_align_right_img">
-                        <img src="{% static 'website/images/img2.png' %}" alt="#" />
-                    </div>
-                </div>
-                <div class="col-md-6 layout_padding">
-                    <div class="full paddding_left_15">
-                        <div class="heading_main text_align_left">
-                           <h2><span class="theme_color">Know your </span>CA Officals</h2>
-                        </div>
-                    </div>
-                    <div class="full paddding_left_15">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    </div>
-                    <div class="full paddding_left_15">
-                        <a class="main_bt" href="#">Exchange ></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
 
 
 	<!-- links to helpful resources section -->
     <div class="section layout_padding padding_top_0">
-        <div class="container">
+        <div class="container" style="padding: 40px; border-bottom: solid 1px #b01c1c">
             <div class="row">
                 <div class="col-md-12">
                     <div class="full">
                         <div class="heading_main text_align_center">
+                            <br><br>
                            <h2><span class="theme_color"></span>YOUR VOICE IN THE 2020 ELECTIONS</h2>
                         </div>
                     </div>
@@ -291,7 +269,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="full news_blog">
                        <img class="img-responsive" src="{% static 'website/images/b1.png' %}" alt="#" />
-                       <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
+                       <div class="overlay"><a class="main_bt transparent" href="https://vote.gov/">View</a></div>
                        <div class="blog_details">
                          <h3>Register to Vote</h3>
                          <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
@@ -301,9 +279,9 @@
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="full news_blog">
                         <img class="img-responsive" src="{% static 'website/images/b2.png' %}" alt="#" />
-                        <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
+                        <div class="overlay"><a class="main_bt transparent" href="https://ballotpedia.org/Presidential_candidates,_2020">View</a></div>
                        <div class="blog_details">
-                         <h3>Know your Canidates</h3>
+                         <h3>Know your 2020 Candidates</h3>
                          <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                        </div>
                     </div>
@@ -311,7 +289,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="full news_blog">
                         <img class="img-responsive" src="{% static 'website/images/b3.png' %}" alt="#" />
-                        <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
+                        <div class="overlay"><a class="main_bt transparent" href="https://projects.fivethirtyeight.com/polls/">View</a></div>
                        <div class="blog_details">
                          <h3>Follow Election Polls</h3>
                          <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
@@ -322,53 +300,8 @@
         </div>
     </div>
     <!-- end section -->
-    <!-- section -->
-    <div class="section layout_padding padding_top_0">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="full">
-                        <div class="heading_main text_align_center">
-                           <h2><span class="theme_color"></span> What issues do you think are relavent?</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
-    <!-- contact_form -->
-    <div class="section contact_form">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12 offset-lg-3">
-                    <div class="full">
-                        <form class="contact_form_inner" action="#">
-                            <fieldset>
-                                <div class="field">
-                                    <input type="text" name="name" placeholder="Your name" />
-                                </div>
-                                <div class="field">
-                                    <input type="email" name="email" placeholder="Email" />
-                                </div>
-                                <div class="field">
-                                    <input type="text" name="Issue_Title" placeholder="Issue Title" />
-                                </div>
-                                <div class="field">
-                                    <textarea placeholder="Enter a relavent political issue we should put resources for on the site."></textarea>
-                                </div>
-                                <div class="field center">
-                                    <button>SEND</button>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end contact_form -->
-    <!-- end section -->
+
+
     <!-- Start Footer -->
     <footer class="footer-box">
         <div class="container">
@@ -380,41 +313,6 @@
                                 <img class="img-responsive" src="{% static 'website/images/footer_logo.png' %}" alt="#" />
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <h3>Quick Links</h3>
-                            </div>
-                            <div class="full">
-                                <ul class="menu_footer">
-                                    <li><a href="{% url 'emailreps:index' %}">> Home</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <div class="footer_blog full white_fonts">
-                             <h3>Newsletter</h3>
-                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                             <div class="newsletter_form">
-                                <form action="index.html">
-                                   <input type="email" placeholder="Your Email" name="#" required="">
-                                   <button>Submit</button>
-                                </form>
-                             </div>
-                         </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <div class="footer_blog full white_fonts">
-                             <h3>Contact us</h3>
-                             <ul class="full">
-                                <li><img src="{% static 'website/images/i5.png' %}"><span>California<br>United States</span></li>
-                                <li><img src="{% static 'website/images/i6.png' %}"><span>yourvoiceheard115@gmail.com</span></li>
-                                <li><img src="{% static 'website/images/i7.png' %}"><span>Number N/A</span></li>
-                             </ul>
-                         </div>
-                            </div>
                         </div>
 					</div>
                 </div>
@@ -427,7 +325,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="crp">© Copyrights 2019 design by html.design</p>
+                    <p class="crp">©Created by Students at University of California, Santa Cruz.<br> Last Updated: 07/11/20</p>
                 </div>
             </div>
         </div>
@@ -553,4 +451,3 @@ jQuery(function ($) {
 	</script>
 </body>
 
-</html>

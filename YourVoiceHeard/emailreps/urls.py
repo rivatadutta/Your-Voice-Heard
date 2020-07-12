@@ -13,6 +13,8 @@ urlpatterns = [
     path('ice', views.ice, name='ice'),
     path('blm', views.blm, name='blm'),
     path('proposeissues', views.proposeissues, name='proposeissues'),
+    path('caofficals', views.caofficals, name='caofficals'),
+    path('2020elections', views.elections2020, name='2020elections'),
     path('climatechange', views.climatechange, name='climatechange'),
     path('yemen', views.yemen, name='yemen'),
     ]
