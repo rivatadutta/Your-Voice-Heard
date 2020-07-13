@@ -137,7 +137,7 @@
     <form method="POST">
       {% csrf_token %}
       <div class="col-md-12 white_fonts">
-      <div class="radio" style="font-size:30px; position:relative; left:375px; top:0px">
+      <div class="radio" style="font-size:30px; position:relative; left:400px; top:0px">
         <label>
           <input type="radio" name="poll" value="option1" required>
           Issue #1
@@ -160,7 +160,7 @@
       <div class="newsletter_form" style="position:relative; left:600px; top:0px">
          <form action="index.html">
             <button>Submit</button>
-            <button>View Results</button>
+            <button><a href="{% url 'emailreps:index' %}">View Results</a></button>
          </form>
       </div>
 
