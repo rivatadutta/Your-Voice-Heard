@@ -37,12 +37,20 @@ def elections2020(request):
     context = {}
     return render(request, '2020elections.html', context)
 
+def vote(request):
+    context = {}
+    return render(request, 'vote.html', context)
+
+def results(request):
+    context = {}
+    return render(request, 'results.html', context)
+
 def reps_page(request):
     reps = Representative.objects.all()
     context = {'reps': reps}
     return render(request, 'RepsPage.html', context)
 
-    
+
 def make_issue(request):
     issue_form = IssueForm()
     curr_issues = reversed(Issue.objects.all())
@@ -58,4 +66,3 @@ def add_issue(request):
         #new_issue.save()
         new_issue = form.save()
     return redirect('emailreps:make_issue')
-
