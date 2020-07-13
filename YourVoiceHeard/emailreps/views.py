@@ -39,7 +39,7 @@ def elections2020(request):
 
 def vote(request):
     context = {}
-    return render(request, 'vote.html', context)
+    return render(request, 'vote.php', context)
 
 def reps_page(request):
     reps = Representative.objects.all()
