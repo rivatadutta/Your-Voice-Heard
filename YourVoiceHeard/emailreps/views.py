@@ -1,7 +1,16 @@
 from django.shortcuts import render, redirect
 from django.views.decorators.http import require_POST
-from .models import Senator, Representative, Issue
+from django.db.models import Avg, Count, Min, Sum
+from .models import Senator, Representative, Issue, Vote
 from .forms import IssueForm
+
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
 
 # Create your views here.
 
@@ -40,22 +49,51 @@ def elections2020(request):
 def vote(request):
     context = {}
     return render(request, 'vote.html', context)
+
 def upvote(request, id):
+    ip = get_client_ip(request)
     issue = Issue.objects.get(id=id)
-    issue.num_votes += 1
-    issue.save()
-    return redirect('emailreps:results')
+    if Vote.objects.filter(ip_address=ip, issue=issue).exists():
+        vote_check = Vote.objects.get(ip_address=ip, issue=issue)
+        print('henlo', vote_check)
+        if vote_check.vote_type == 1:
+            vote_check.vote_type = 0
+        elif vote_check.vote_type == 0:
+            vote_check.vote_type = 1
+        else:
+            vote_check.vote_type = 1
+        vote_check.save()
+        return redirect('emailreps:results')
+    else:
+        vote = Vote(vote_type=1, ip_address=get_client_ip(request), issue=issue)
+        vote.save()
+        return redirect('emailreps:results')
 
 def downvote(request, id):
+    ip = get_client_ip(request)
     issue = Issue.objects.get(id=id)
-    issue.num_votes -= 1
-    issue.save()
-    return redirect('emailreps:results')
+    if Vote.objects.filter(ip_address=ip, issue=issue).exists():
+        vote_check = Vote.objects.get(ip_address=ip, issue=issue)
+        print('henlo', vote_check)
+        if vote_check.vote_type == -1:
+            vote_check.vote_type = 0
+        elif vote_check.vote_type == 0:
+            vote_check.vote_type = -1
+        else:
+            vote_check.vote_type = -1
+        vote_check.save()
+        return redirect('emailreps:results')
+    else:
+        vote = Vote(vote_type=-1, ip_address=get_client_ip(request), issue=issue)
+        vote.save()
+        return redirect('emailreps:results')
 
 def results(request):
-    curr_issues = Issue.objects.all().order_by('-num_votes', '-id')
+    # need to count the number of vote objects for a given issue
+    curr_issues = Issue.objects.annotate(true_vote=Sum('vote__vote_type'))
+    print(curr_issues[0].true_vote)
     context = {'issues': curr_issues}
-    print(curr_issues)
+    #print(curr_issues)
     return render(request, 'results.html', context)
 
 def reps_page(request):

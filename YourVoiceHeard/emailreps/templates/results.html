@@ -130,7 +130,7 @@
                 <tr>
                     <td>{{issue.issue_name}} </td>
                     <td>{{issue.issue_text}} </td>
-                    <td>{{issue.num_votes}} </td>
+                    <td>{{issue.true_vote}} </td>
                     <td>
                         <a href="{% url 'emailreps:upvote' id=issue.id %}" class='btn btn-dark'> Upvote </a>
                         <a href="{% url 'emailreps:downvote' id=issue.id %}" class='btn btn-dark'> Downvote </a>
