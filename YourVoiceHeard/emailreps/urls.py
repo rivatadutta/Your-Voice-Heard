@@ -18,4 +18,5 @@ urlpatterns = [
     path('climatechange', views.climatechange, name='climatechange'),
     path('yemen', views.yemen, name='yemen'),
     path('vote', views.vote, name='vote'),
+    path('results', views.results, name='results'),
     ]

@@ -41,6 +41,10 @@ def vote(request):
     context = {}
     return render(request, 'vote.html', context)
 
+def results(request):
+    context = {}
+    return render(request, 'results.html', context)
+
 def reps_page(request):
     reps = Representative.objects.all()
     context = {'reps': reps}
