@@ -136,30 +136,28 @@
     <!-- Voting Poll -->
 
     <form method="POST">
-      <!-- {% csrf_token %} -->
+      {% csrf_token %}
       <div class="radio">
-      <div class=text_align_left>
         <label>
           <input type="radio" name="poll" value="option1" required>
-          <h2>Issue #1</h2>
+          Issue #1
         </label> &nbsp;
         <br>
         <label>
           <input type="radio" name="poll" value="option2">
-          <h2>Issue #2</h2>
+          Issue #2
         </label> &nbsp;
         <br>
         <label>
           <input type="radio" name="poll" value="option3">
-          <h2>Issue #3</h2>
+          Issue #3
         </label> &nbsp;
         <br>
         <label>
           <input type="radio" name="poll" value="option4">
-          <h2>Issue #4</h2>
+          Issue #4
         </label> &nbsp;
         <br>
-      </div>
       </div>
 
       <div class="newsletter_form">
