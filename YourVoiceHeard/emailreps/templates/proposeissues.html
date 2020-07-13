@@ -52,7 +52,7 @@
     <!-- Start header -->
     <header class="top-header">
         <div class="header_top">
-            
+
             <div class="container">
                 <div class="row">
                     <div class="logo_section">
@@ -62,12 +62,12 @@
                         <ul>
                             <li><a href="mailto:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/mail_icon.png' %}" alt="#" />yourvoiceheard115@gmail.com</a></li>
                             <li><a href="tel:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/phone_icon.png' %}" alt="#" />N/A</a></li>
-                            <li><a class="join_bt" href="#">We need your voice</a></li>
+                            <li><a class="join_bt" href="{% url 'emailreps:vote' %}">We need your voice</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        
+
         </div>
         <div class="header_bottom">
           <div class="container">
@@ -116,7 +116,7 @@
         </div>
     </div>
     <!-- End Banner -->
-    
+
    <!-- section -->
     <div class="section layout_padding">
         <div class="container">
@@ -124,7 +124,7 @@
                 <div class="col-md-12">
                     <div class="full">
                         <div class="heading_main text_align_center">
-                           <h2><span class="theme_color"></span>Propose Your Issues</h2>    
+                           <h2><span class="theme_color"></span>Propose Your Issues</h2>
                         </div>
                     </div>
                 </div>
@@ -169,7 +169,7 @@
         </div>
     </div>
     <!-- end contact_form -->
-   
+
     <!-- Start Footer -->
     <footer class="footer-box">
         <div class="container">
@@ -240,7 +240,7 @@
     <script src="{% static 'website/js/jquery.min.js' %}"></script>
 	<script src="{% static 'website/js/popper.min.js' %}"></script>
     <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
-	
+
     <!-- ALL PLUGINS -->
     <script src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
     <script src="{% static 'website/js/jquery.pogo-slider.min.js' %}"></script>
@@ -251,6 +251,6 @@
     <script src="{% static 'website/js/isotope.min.js' %}"></script>
     <script src="{% static 'website/js/images-loded.min.js' %}"></script>
     <script src="{% static 'website/js/custom.js' %}"></script>
-	
+
 </body>
 </html>
