@@ -24,6 +24,17 @@ class Senator(models.Model):
 class Issue(models.Model):
     issue_name = models.CharField(max_length=200)
     issue_text = models.TextField()
-    num_votes = models.PositiveIntegerField(default=0)
     def __str__(self):
         return self.issue_name
+
+class Vote(models.Model):
+    vote_type = models.IntegerField()
+    ip_address = models.GenericIPAddressField()
+    issue = models.ForeignKey(Issue, on_delete=models.CASCADE)
+    def __str__(self):
+        if self.vote_type == 1:
+            return ('Upvote')
+        elif self.vote_type == 0:
+            return ('Neutral')
+        else:
+            return ('Downvote')

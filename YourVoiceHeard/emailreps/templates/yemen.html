@@ -1,3 +1,4 @@
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +50,7 @@
     <!-- end loader -->
     <!-- END LOADER -->
 
-    <!-- Start header -->
+   <!-- Start header -->
     <header class="top-header">
         <div class="header_top">
 
@@ -62,7 +63,7 @@
                         <ul>
                             <li><a href="mailto:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/mail_icon.png' %}" alt="#" />yourvoiceheard115@gmail.com</a></li>
                             <li><a href="tel:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/phone_icon.png' %}" alt="#" />N/A</a></li>
-                            <li><a class="join_bt" href="#">We need your voice</a></li>
+                            <li><a class="join_bt" href="{% url 'emailreps:vote' %}">We need your voice</a></li>
                         </ul>
                     </div>
                 </div>
@@ -72,7 +73,7 @@
         <div class="header_bottom">
           <div class="container">
             <div class="col-sm-12">
-                <div class="menu_orange_section" style="background: #ff880e;">
+                <div class="menu_orange_section">
                    <nav class="navbar header-nav navbar-expand-lg">
                      <div class="menu_section">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,11 +83,13 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link" href="{% url 'emailreps:index' %}">Home</a></li>
+                        <li><a class="nav-link active" href="{% url 'emailreps:index' %}">Home</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:blm' %}">#BLM</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:ice' %}">ICE</a></li>
-                        <li><a class="nav-link active" href="{% url 'emailreps:yemen' %}">Yemen</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:yemen' %}">Yemen</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:climatechange' %}">Climate Change</a></li>
+                         <li><a class="nav-link" href="{% url 'emailreps:2020elections' %}">2020 Elections</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:caofficals' %}">About CA Officals</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:proposeissues' %}">Propose Your Issues?</a></li>
                     </ul>
                 </div>
@@ -100,19 +103,7 @@
     </header>
     <!-- End header -->
 
-    <!-- Start Banner -->
-    <div class="section inner_page_banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="banner_title">
-                        <h3>Yemen</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Banner -->
+
 
     <!-- section -->
     <div class="section layout_padding about_bg">
@@ -285,7 +276,7 @@
     <script src="{% static 'website/js/jquery.min.js' %}"></script>
 	<script src="{% static 'website/js/popper.min.js' %}"></script>
     <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
-	
+
     <!-- ALL PLUGINS -->
 	<script src="{% static 'website/js/generate-message.js' %}"></script>
     <script src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
@@ -297,7 +288,6 @@
     <script src="{% static 'website/js/isotope.min.js' %}"></script>
     <script src="{% static 'website/js/images-loded.min.js' %}"></script>
     <script src="{% static 'website/js/custom.js' %}"></script>
-	
-</body>
 
+</body>
 </html>
