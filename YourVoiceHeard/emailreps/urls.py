@@ -19,4 +19,6 @@ urlpatterns = [
     path('yemen', views.yemen, name='yemen'),
     path('vote', views.vote, name='vote'),
     path('results', views.results, name='results'),
+    path('upvote/<int:id>/', views.upvote, name='upvote'),
+    path('downvote/<int:id>/', views.downvote, name='downvote'),
     ]

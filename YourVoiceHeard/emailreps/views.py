@@ -40,9 +40,22 @@ def elections2020(request):
 def vote(request):
     context = {}
     return render(request, 'vote.html', context)
+def upvote(request, id):
+    issue = Issue.objects.get(id=id)
+    issue.num_votes += 1
+    issue.save()
+    return redirect('emailreps:results')
+
+def downvote(request, id):
+    issue = Issue.objects.get(id=id)
+    issue.num_votes -= 1
+    issue.save()
+    return redirect('emailreps:results')
 
 def results(request):
-    context = {}
+    curr_issues = Issue.objects.all().order_by('-num_votes', '-id')
+    context = {'issues': curr_issues}
+    print(curr_issues)
     return render(request, 'results.html', context)
 
 def reps_page(request):

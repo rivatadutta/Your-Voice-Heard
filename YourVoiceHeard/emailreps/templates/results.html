@@ -115,6 +115,33 @@
         </div>
     </div>
     <!-- End Banner -->
+    <div class="container">
+        <table id="IssueTable" class= "table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Issue Title</th>
+                    <th scope="col">Issue Text</th>
+                    <th scope="col">Number of Votes</th>
+                    <th scope="col">Vote Now!</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for issue in issues %}
+                <tr>
+                    <td>{{issue.issue_name}} </td>
+                    <td>{{issue.issue_text}} </td>
+                    <td>{{issue.num_votes}} </td>
+                    <td>
+                        <a href="{% url 'emailreps:upvote' id=issue.id %}" class='btn btn-dark'> Upvote </a>
+                        <a href="{% url 'emailreps:downvote' id=issue.id %}" class='btn btn-dark'> Downvote </a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
 
     <!-- Start Footer -->
     <footer class="footer-box">
@@ -197,6 +224,44 @@
     <script src="{% static 'website/js/isotope.min.js' %}"></script>
     <script src="{% static 'website/js/images-loded.min.js' %}"></script>
     <script src="{% static 'website/js/custom.js' %}"></script>
+<!--
+    <script>
+        function sortTable() {
+        var table, rows, switching, i, x, y, shouldSwitch;
+        table = document.getElementById("IssueTable");
+        switching = true;
+        /*Make a loop that will continue until
+        no switching has been done:*/
+        while (switching) {
+            //start by saying: no switching is done:
+            switching = false;
+            rows = table.rows;
+            /*Loop through all table rows (except the
+            first, which contains table headers):*/
+            for (i = 1; i < (rows.length - 1); i++) {
+            //start by saying there should be no switching:
+            shouldSwitch = false;
+            /*Get the two elements you want to compare,
+            one from current row and one from the next:*/
+            x = rows[i].getElementsByTagName("TD")[2];
+            y = rows[i + 1].getElementsByTagName("TD")[2];
+            //check if the two rows should switch place:
+            if (x.innerHTML < y.innerHTML) {
+                //if so, mark as a switch and break the loop:
+                shouldSwitch = true;
+                break;
+            }
+            }
+            if (shouldSwitch) {
+            /*If a switch has been marked, make the switch
+            and mark that a switch has been done:*/
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+            }
+        }
+        }
+    </script>
+-->
 
 </body>
 </html>

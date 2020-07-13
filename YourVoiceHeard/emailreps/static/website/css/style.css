@@ -25,7 +25,7 @@
 
 body {
 	color: #111;
-	background-color: #000;
+	background-color: #212529;
 	font-size: 15px;
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.80857;
@@ -1804,7 +1804,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .footer-box {
-    background: #000;
+    background: #212529;
     padding: 50px 0;
 }
 
