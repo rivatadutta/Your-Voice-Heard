@@ -124,7 +124,7 @@
                 <div class="col-md-6">
                     <div class="full paddding_left_15">
                         <div class="heading_main text_align_left">
-                           <h2>Vote for Issues You'd Like to See!</h2>
+                           <h2>Vote for Issues Submitted By You!</h2>
                         </div>
                     </div>
                 </div>
@@ -134,9 +134,11 @@
     <!-- end section -->
 
     <!-- Voting Poll -->
+
     <form method="POST">
       <!-- {% csrf_token %} -->
       <div class="radio">
+      <div class=text_align_left>
         <label>
           <input type="radio" name="poll" value="option1" required>
           <h2>Issue #1</h2>
@@ -157,6 +159,7 @@
           <h2>Issue #4</h2>
         </label> &nbsp;
         <br>
+      </div>
       </div>
 
       <button type="submit" class="btn btn-info">
