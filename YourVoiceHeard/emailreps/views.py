@@ -55,7 +55,6 @@ def upvote(request, id):
     issue = Issue.objects.get(id=id)
     if Vote.objects.filter(ip_address=ip, issue=issue).exists():
         vote_check = Vote.objects.get(ip_address=ip, issue=issue)
-        print('henlo', vote_check)
         if vote_check.vote_type == 1:
             vote_check.vote_type = 0
         elif vote_check.vote_type == 0:
@@ -74,7 +73,6 @@ def downvote(request, id):
     issue = Issue.objects.get(id=id)
     if Vote.objects.filter(ip_address=ip, issue=issue).exists():
         vote_check = Vote.objects.get(ip_address=ip, issue=issue)
-        print('henlo', vote_check)
         if vote_check.vote_type == -1:
             vote_check.vote_type = 0
         elif vote_check.vote_type == 0:
