@@ -88,10 +88,8 @@ def downvote(request, id):
 
 def results(request):
     # need to count the number of vote objects for a given issue
-    curr_issues = Issue.objects.annotate(true_vote=Sum('vote__vote_type'))
-    print(curr_issues[0].true_vote)
+    curr_issues = Issue.objects.annotate(true_vote=Sum('vote__vote_type')).order_by('-true_vote')
     context = {'issues': curr_issues}
-    #print(curr_issues)
     return render(request, 'results.html', context)
 
 def reps_page(request):

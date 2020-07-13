@@ -24,7 +24,6 @@ class Senator(models.Model):
 class Issue(models.Model):
     issue_name = models.CharField(max_length=200)
     issue_text = models.TextField()
-    num_votes = models.PositiveIntegerField(default=0)
     def __str__(self):
         return self.issue_name
 
