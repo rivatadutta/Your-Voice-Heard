@@ -36,7 +36,8 @@ def climatechange(request):
     return render(request, 'climatechange.html', context)
 
 def proposeissues(request):
-    context = {}
+    issue_form = IssueForm()
+    context = {'issue_form': issue_form}
     return render(request, 'proposeissues.html', context)
 
 def caofficals(request):
@@ -113,4 +114,4 @@ def add_issue(request):
         #new_issue = Issue(issue_name = form.cleaned_data['issue_name'], issue_text = form.cleaned_data['issue_text'])
         #new_issue.save()
         new_issue = form.save()
-    return redirect('emailreps:make_issue')
+    return redirect('emailreps:results')

@@ -143,7 +143,8 @@
 					</div>
 				</div>
 					<div class="full">
-                        <form class="contact_form_inner" action="#">
+                        <form class="contact_form_inner" action="{% url 'emailreps:post_issue' %}" method="POST" role="form">
+                            {% csrf_token %}
                             <fieldset>
                                 <!--
 								<div class="field">
@@ -157,10 +158,12 @@
                                 </div>
                             -->
                                 <div class="field">
-                                    <input type="text" name="Issue_Title" placeholder="Issue Title" />
+                                    <!--<input type="text" name="Issue_Title" placeholder="Issue Title" />-->
+                                    {{issue_form.issue_name}}
                                 </div>
                                 <div class="field">
-                                    <textarea placeholder="Enter a relavent political issue we should put resources for on the site." style="width: 400px;height: 400px;"></textarea>
+                                    <!--<textarea placeholder="Enter a relavent political issue we should put resources for on the site." style="width: 400px;height: 400px;"></textarea>-->
+                                    {{issue_form.issue_text}}
                                 </div>
                                 <div class="field center">
                                     <button>SEND</button>
