@@ -125,7 +125,7 @@
                         </div>
                         <div class="card-group">
                     {% endif %}
-                    <div class="card">
+                        <div class="card text-dark font-weight-bold" style="{% if rep.party == 'Republican' %} background-color: #fa8072; {% elif rep.party == 'Democrat' %} background-color: #E0FFFF; {% endif %}">
                         <div class="card-body">
                         <h5 class="card-title text-dark">{{rep.rep_name}}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Party: {{rep.party}}</h6>
@@ -158,7 +158,7 @@
         <div class="container">
             <div class="card-group">
                 {% for sen in sens %}
-                    <div class="card">
+                    <div class="card text-dark font-weight-bold" style="{% if sen.party == 'Republican' %} background-color: #fa8072; {% elif sen.party == 'Democrat' %} background-color: #E0FFFF; {% endif %}">
                         <div class="card-body">
                         <h5 class="card-title text-dark">{{sen.sen_name}}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Party: {{sen.party}}</h6>
