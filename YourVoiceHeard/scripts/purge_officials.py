@@ -1,3 +1,7 @@
+'''
+Simple Script to delete all Senators and 
+Representatives from the database
+'''
 from emailreps.models import Representative, Senator
 import csv
 import os
