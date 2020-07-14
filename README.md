@@ -5,11 +5,11 @@
 ## Running Instructions
 
 1. Clone the repository
-2. Under Your-Voice-Heard/YourVoiceHead run in a terminal:
+2. Under Your-Voice-Heard/YourVoiceHeard run in a terminal:
 ```
 pip install requirements.txt
 ```
-3. 
+3. Under Your-Voice-Heard/YourVoiceHeard run the following in a terminal:
 ```
 python manage.py runserver
 ```
