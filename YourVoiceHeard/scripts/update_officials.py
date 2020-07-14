@@ -19,9 +19,9 @@ def run():
                 line_num += 1
                 continue
             print()
-            print(row[0],row[1],row[2],row[3], row[4])
+            print(row[0],row[1],row[2],row[3], row[4], row[5])
             print()
-            rep = Representative(rep_name = row[0], comittee = row[3], website = row[2], state = row[1], party = row[4])
+            rep = Representative(rep_name = row[0], comittee = row[3], website = row[2], state = row[1], party = row[4], district = row[5])
             rep.save()
             line_num += 1
 

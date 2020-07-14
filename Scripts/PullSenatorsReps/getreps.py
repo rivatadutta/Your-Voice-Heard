@@ -62,7 +62,7 @@ cali_reps = cali_table.find_elements_by_tag_name('tr')
 
 with open('representatives.csv', 'w', newline='') as csvfile:
     rep_writer = csv.writer(csvfile, delimiter = ',')
-    rep_writer.writerow(['Representative', 'State', 'Website', 'Committee', 'Party'])
+    rep_writer.writerow(['Representative', 'State', 'Website', 'Committee', 'Party', 'District'])
     for rep in cali_reps:
         rep_data = rep.find_elements_by_tag_name('td')
         if len(rep_data) < 1:
@@ -71,11 +71,12 @@ with open('representatives.csv', 'w', newline='') as csvfile:
         website = rep_data[1].find_element_by_tag_name('a').get_attribute('href')
         committee = rep_data[5].text
         party = rep_data[2].text
+        district = rep_data[0].text
         if party == 'R':
             party = 'Republican'
         elif party == 'D':
             party = 'Democrat'
-        rep_writer.writerow([name, 'California', website, committee, party])
+        rep_writer.writerow([name, 'California', website, committee, party, district])
         print(name,website,committee)
 
 

@@ -9,6 +9,7 @@ class Representative(models.Model):
     website = models.URLField(blank=True,max_length=400)
     state = models.CharField(max_length=50)
     party = models.CharField(blank=True, max_length=20)
+    district = models.CharField(blank=True, max_length=10)
     def __str__(self):
         return self.rep_name
     def first_last_name(self):

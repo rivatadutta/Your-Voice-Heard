@@ -41,7 +41,9 @@ def proposeissues(request):
     return render(request, 'proposeissues.html', context)
 
 def caofficals(request):
-    context = {}
+    reps = Representative.objects.all()
+    senators = Senator.objects.all()
+    context = {'reps': reps, 'senators': senators}
     return render(request, 'caofficals.html', context)
 
 def elections2020(request):
