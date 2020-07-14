@@ -1,0 +1,536 @@
+[33mcommit 6ea35508a63d639568740fd1fd1dd2f403229352[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Hunter Brown <hujbrown@ucsc.edu>
+Date:   Tue Jul 14 12:31:55 2020 -0700
+
+    Removed some template text and added generic blurbs
+
+[33mcommit b1ea12a26bed65ef7631d4dc7fa12ef9dd8f7500[m
+Author: Hunter Brown <hujbrown@ucsc.edu>
+Date:   Tue Jul 14 11:02:20 2020 -0700
+
+    Fixed button
+
+[33mcommit b904860d86a50f136d3809a67f320411146c3f64[m
+Author: Hunter Brown <hujbrown@ucsc.edu>
+Date:   Mon Jul 13 23:19:47 2020 -0700
+
+    Fixed proposing issues
+
+[33mcommit 8e9befef6574a9849ffb43101468f1d28b4d88f3[m[33m ([m[1;32mHunterSprint2[m[33m)[m
+Author: Hunter Brown <hujbrown@ucsc.edu>
+Date:   Mon Jul 13 16:29:47 2020 -0700
+
+    Updated documents
+
+[33mcommit 048c4b93491509e1a3263fb53a04a07803305047[m
+Author: jsong47 <67608935+jsong47@users.noreply.github.com>
+Date:   Mon Jul 13 15:19:35 2020 -0700
+
+    Add files via upload
+
+[33mcommit 1a1d4369e3975b06bdef964d070828cda2b634be[m
+Author: jsong47 <67608935+jsong47@users.noreply.github.com>
+Date:   Mon Jul 13 15:18:46 2020 -0700
+
+    Update proposeissues.html
+
+[33mcommit 946865f707f8175c6015c9986871fe914e90c72c[m
+Merge: a2c588e 7f14cf5
+Author: hujbrown <63430315+hujbrown@users.noreply.github.com>
+Date:   Mon Jul 13 15:16:48 2020 -0700
+
+    Merge pull request #18 from hujbrown/dalucche-sprint2
+    
+    Dalucche sprint2
+
+[33mcommit 7f14cf5c0b9849a898f11c7d498812e016087b9e[m[33m ([m[1;31morigin/dalucche-sprint2[m[33m)[m
+Merge: 94f0d3d a2c588e
+Author: hujbrown <63430315+hujbrown@users.noreply.github.com>
+Date:   Mon Jul 13 15:16:39 2020 -0700
+
+    Merge branch 'master' into dalucche-sprint2
+
+[33mcommit a2c588e267b7d4d8810b22f9f36a5eed59fdb20d[m
+Author: Hunter Brown <hujbrown@ucsc.edu>
+Date:   Mon Jul 13 15:00:31 2020 -0700
+
+    Fixed Number of Votes appearing as None
+
+[33mcommit 033128655b39dca66d8689cead68b2ced77cf09c[m[33m ([m[1;31morigin/HunterSprint2[m[33m)[m
+Author: Hunter Brown <hujbrown@ucsc.edu>
+Date:   Mon Jul 13 14:56:34 2020 -0700
+
+    Fix ordering of issues and removed the num_votes field
+
+[33mcommit 0c04430bfc67b04b8e4c3165c276ac88fb1a9282[m
+Author: Hunter Brown <hujbrown@ucsc.edu>
+Date:   Mon Jul 13 14:53:28 2020 -0700
+
+    Got rid of some debugging
+
+[33mcommit 4a09a02d1346434a0cb5a4ceea2cd4bd26890172[m
+Author: Hunter Brown <hujbrown@ucsc.edu>
+Date:   Mon Jul 13 14:52:04 2020 -0700
+
+    Votes are limited to one per IP
+
+[33mcommit 94f0d3d79cca5e4039a5cc2757151f69716ffe19[m[33m ([m[1;32mdalucche-sprint2[m[33m)[m
+Author: dalucche <dalucche@ucsc.edu>
+Date:   Mon Jul 13 14:50:24 2020 -0700
+
+    Updated templates to have textarea for message and realigned user forms
+
+[33mcommit 5f464f8f29ffc988b2e51ef2d323ff42523d8a0b[m
+Author: dalucche <dalucche@ucsc.edu>
+Date:   Mon Jul 13 14:49:57 2020 -0700
+
+    Updated javascript line breaks for textarea html
+
+[33mcommit 4278ed20450eccd2c37e077240555baa3884e5c8[m
+Author: Hunter Brown <hujbrown@ucsc.edu>
+Date:   Mon Jul 13 13:26:58 2020 -0700
+
+    Styled Results page
+
+[33mcommit 3323f508447c932de5b45ae1395b69245db7bdf9[m
+Merge: 46ff133 551d25e
+Author: atoofan <67608294+atoofan@users.noreply.github.com>
+Date:   Mon Jul 13 10:26:19 2020 -0700
+
+    Merge pull request #17 from hujbrown/atoofan-sprint-2
+    
+    Includes Voting/Results Page Front End
+
+[33mcommit 551d25ee1438d00b8e4b8c260171f862b536667d[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 10:22:59 2020 -0700
+
+    Added path to voting page for all pages
+
+[33mcommit 4dbaed727b81ed102289a1986d6be634f41ce73f[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 10:18:31 2020 -0700
+
+    Added path for results page
+
+[33mcommit 6c9c1856fec2ef155d24edad3b8b9b7fdb1eb44a[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 10:17:36 2020 -0700
+
+    Added path for results page
+
+[33mcommit c03fc82f057ee3eb8a57eb66e49a19ed13770532[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 10:13:32 2020 -0700
+
+    Update Voting Page
+
+[33mcommit c45bc54f86df7dd214a907ce48aefb2cc01774dc[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 02:35:57 2020 -0700
+
+    Added placeholder for results page
+
+[33mcommit 6de38a5574f8f2705584727354d820b4c29a7838[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 02:30:43 2020 -0700
+
+    Again
+
+[33mcommit 958137f4f3cbbf9c542077f5e13f0e4873cc09cb[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 02:29:52 2020 -0700
+
+    Changed Alignment Again
+
+[33mcommit 1b8a9e98faf26032466f1406c8af5737361f1fea[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 02:28:51 2020 -0700
+
+    Alignment again
+
+[33mcommit 5d5e17075fb8f73e814349fcba2f14fe9b58b6d9[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 02:27:55 2020 -0700
+
+    Changed alignment of poll and buttons
+
+[33mcommit 11866e41b60c70ffc8613448359ceda4fe159c02[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 02:24:41 2020 -0700
+
+    Changing alignment and row to be in middle
+
+[33mcommit 52eecff8023ecfb306d36a68e136ea0da01c5aeb[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 02:16:57 2020 -0700
+
+    Changed alignment again
+
+[33mcommit 808411525d802511c6c7867b21780363e5b2be77[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 02:13:13 2020 -0700
+
+    Changed position again
+
+[33mcommit a365d2d244ac2c5ebf097b30b9a412f62ef6a77e[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 02:12:26 2020 -0700
+
+    Changed position of poll to be relative
+
+[33mcommit f2ddd64503e79d4808ca1657ac42ab3a9744eaf4[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 02:09:18 2020 -0700
+
+    Font should be fixed
+
+[33mcommit 9a7034e803c69dc099bf45e3db51d7e9f5c2b960[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 02:07:22 2020 -0700
+
+    Fixing Alignment and Font again
+
+[33mcommit edf18b2eda134061ced852f7fb4e2d4450800c4e[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 02:04:57 2020 -0700
+
+    Fixing Alignment and Font of Poll
+
+[33mcommit bbd9837a19b544f4eefeb1214cfbf6450e2cb78c[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 02:01:11 2020 -0700
+
+    Aligned Submit and View Results Buttons
+
+[33mcommit 130899bcd127ffeffa83c98217fd5e09f2fda893[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 01:59:52 2020 -0700
+
+    Matched Submit and View Results Buttons
+
+[33mcommit 34592ddd4de46880ac82f19ac7b5b69c6b3ad1e1[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 01:58:30 2020 -0700
+
+    Matching Submit Buttonw
+
+[33mcommit eaa9093a70bf25c790f4a4d28ab6d8a5b8ba4d6b[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 01:56:28 2020 -0700
+
+    Matched Submit Buttons
+
+[33mcommit f93587a71e94b4c06d5fe5bcc37e4d46aeef1d34[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 01:54:33 2020 -0700
+
+    Formatted Voting Page Again
+
+[33mcommit d76c7b5e719d3ae7798992350badd129f153a4dc[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 01:47:13 2020 -0700
+
+    Formatted Voting Page
+
+[33mcommit 09f475ca49451feaa690a2a014af4fa4d401f3c5[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 01:44:29 2020 -0700
+
+    Testing Formatting Size
+
+[33mcommit bb0fb40637329b523c2ecd89e5475c13b153e354[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Mon Jul 13 01:42:50 2020 -0700
+
+    Testing Formatting Size
+
+[33mcommit a6382f7a9a2807ff2aaf036f977eb4662e392ee4[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 20:56:02 2020 -0700
+
+    Testing Formatting Size
+
+[33mcommit 5dfba490c8dcf1ba6d3c36f3b9ccedeeaa892256[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 20:54:12 2020 -0700
+
+    Testing Poll Front End
+
+[33mcommit a8bda893dd2322cdfabdf3c9491f433ea8d7fa18[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 20:52:03 2020 -0700
+
+    Testing Poll Front End
+
+[33mcommit 0b0f0281fdf0f4f2b6125831d45e7a1bf1b20923[m
+Merge: 250f7d9 2f29461
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 20:50:05 2020 -0700
+
+    Testing Poll Front End
+
+[33mcommit 250f7d9b51e4aed302f5f03dbe934b435c8ab0ec[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 20:49:29 2020 -0700
+
+    Testing Poll Front End
+
+[33mcommit 2f2946166bf1cbbf69caee57056d983a2f637c17[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 20:47:50 2020 -0700
+
+    Testing Poll Front End
+
+[33mcommit ebe3cd3f7d2c7345ced22566f73ababa1d22e385[m
+Merge: be0ebf5 ae0f035
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 17:46:17 2020 -0700
+
+    Merge branch 'atoofan-sprint-2' of https://github.com/hujbrown/Your-Voice-Heard into atoofan-sprint-2
+
+[33mcommit be0ebf54c0e88395b7ee749f20658ce44908f2ef[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 17:46:13 2020 -0700
+
+    Revert to previous commit
+
+[33mcommit ae0f0355ccecbef91c9b9c5eb67ce88ce153d3e9[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 17:39:33 2020 -0700
+
+    Revert "Testing"
+    
+    This reverts commit 06d696839cf567a37ecef204d03417c23bb58b3e.
+
+[33mcommit 1bcdf3b574fe87ed47169e628a0d7d93ce82d071[m
+Merge: 8170054 5518a7f
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 17:35:26 2020 -0700
+
+    Merge branch 'atoofan-sprint-2' of https://github.com/hujbrown/Your-Voice-Heard into atoofan-sprint-2
+
+[33mcommit 5518a7f555aee420daa26f0fca9161edf1201827[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 17:35:11 2020 -0700
+
+    Testing PHP file again
+
+[33mcommit 81700546ffbba67f1be175b9d7f1363370685628[m
+Merge: c6aabf0 e23b91b
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 17:33:50 2020 -0700
+
+    Merge branch 'atoofan-sprint-2' of https://github.com/hujbrown/Your-Voice-Heard into atoofan-sprint-2
+
+[33mcommit e23b91b6ecf8566a9e9df9e3f34ce0d46aba7379[m
+Merge: 2bd1abf 674d528
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 17:33:38 2020 -0700
+
+    Merge branch 'atoofan-sprint-2' of https://github.com/hujbrown/Your-Voice-Heard into atoofan-sprint-2
+
+[33mcommit 2bd1abfcfaf18c2e7204deda0ab56c6fd29033ae[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 17:32:52 2020 -0700
+
+    Testing PHP File
+
+[33mcommit c6aabf05524685ed49f0547e99ff8f8835531e10[m
+Merge: 6d19f9d 46ff133
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 17:23:30 2020 -0700
+
+    Merge branch 'master' of https://github.com/hujbrown/Your-Voice-Heard into atoofan-sprint-2
+
+[33mcommit 6d19f9d1ac88af3f9328e1604bd29a7e0df0f2a4[m
+Merge: 0bb987f 674d528
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 17:23:15 2020 -0700
+
+    Merge branch 'atoofan-sprint-2' of https://github.com/hujbrown/Your-Voice-Heard into atoofan-sprint-2
+
+[33mcommit 674d528d365781720f7c49a92db7e50382a5c67f[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 17:22:48 2020 -0700
+
+    Testing poll php file
+
+[33mcommit 46ff1334570602c4a13c77f96169ff4f191266b0[m
+Author: Hunter Brown <hujbrown@ucsc.edu>
+Date:   Sun Jul 12 14:06:19 2020 -0700
+
+    Fixed Scrum Board
+
+[33mcommit b795b067547676dfd4d1574a7e0f6ff7218fa329[m
+Author: Hunter Brown <hujbrown@ucsc.edu>
+Date:   Sun Jul 12 14:02:04 2020 -0700
+
+    Fixed Scrum Board
+
+[33mcommit 25859b3e6291048171e219cf25c6dcbf4b13615e[m
+Author: Hunter Brown <hujbrown@ucsc.edu>
+Date:   Sun Jul 12 14:00:09 2020 -0700
+
+    Updated Scrum Board
+
+[33mcommit f0a90aa634f50224d0c079d442464cdc80502b48[m
+Author: dalucche <dalucche@ucsc.edu>
+Date:   Sun Jul 12 13:10:50 2020 -0700
+
+    Added more comments to generate-message.js
+
+[33mcommit 0bb987f7ddc847301e3a9501845834e528fc3288[m
+Merge: 67cb594 06d6968
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 13:06:11 2020 -0700
+
+    Merge branch 'atoofan-sprint-2' of https://github.com/hujbrown/Your-Voice-Heard into atoofan-sprint-2
+
+[33mcommit 06d696839cf567a37ecef204d03417c23bb58b3e[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sun Jul 12 13:05:53 2020 -0700
+
+    Testing
+
+[33mcommit d0f1b8a9f4fd87983244f23ad3fe614425b1eaa7[m
+Author: dalucche <dalucche@ucsc.edu>
+Date:   Sun Jul 12 13:04:17 2020 -0700
+
+    Added user forms at bottom of issue pages to generate message
+
+[33mcommit 9baa21d2aab4935ea557efc33087ae1318e985e0[m
+Author: dalucche <dalucche@ucsc.edu>
+Date:   Sun Jul 12 13:03:17 2020 -0700
+
+    Created javascript file that generates message based on user form
+
+[33mcommit 67cb594e5828efa257a6d3fef4e760d638a272cf[m
+Merge: d9ab473 2d706e9
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sat Jul 11 23:59:06 2020 -0700
+
+    Merge branch 'atoofan-sprint-2' of https://github.com/hujbrown/Your-Voice-Heard into atoofan-sprint-2
+
+[33mcommit 2d706e9a21e9825d46170204c46f97252d1ca03b[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sat Jul 11 23:58:48 2020 -0700
+
+    Changed format of voting page again
+
+[33mcommit d9ab4735ccf34d579e5a3e8aea9740a90d994c29[m
+Merge: a1be7f3 d020189
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sat Jul 11 22:57:58 2020 -0700
+
+    Merge branch 'atoofan-sprint-2' of https://github.com/hujbrown/Your-Voice-Heard into atoofan-sprint-2
+
+[33mcommit d0201897c6272125b091b34e3042388ba81cd173[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sat Jul 11 22:56:13 2020 -0700
+
+    Changed format of voting page
+
+[33mcommit a1be7f348803af6852932ba7a704368912518e0b[m
+Merge: a112c50 731dcf3
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sat Jul 11 19:47:29 2020 -0700
+
+    Merge branch 'atoofan-sprint-2' of https://github.com/hujbrown/Your-Voice-Heard into atoofan-sprint-2
+
+[33mcommit 731dcf30a371726d23a068dc4e8ced18657d3203[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sat Jul 11 19:46:58 2020 -0700
+
+    Basic template for page
+
+[33mcommit a112c500d631e6739031f38d50a7f694cf82a8f7[m
+Merge: 5dc303d 9e76075
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sat Jul 11 19:44:02 2020 -0700
+
+    Merge branch 'atoofan-sprint-2' of https://github.com/hujbrown/Your-Voice-Heard into atoofan-sprint-2
+
+[33mcommit 9e7607527aa93e37f30ddd375ca17f1ef54d5b49[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sat Jul 11 19:43:50 2020 -0700
+
+    Created path from Homepage to Voting page
+
+[33mcommit a5bcd3d56c3290bcd6273d7698f981caaa708b06[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sat Jul 11 18:51:34 2020 -0700
+
+    Added path for voting page
+
+[33mcommit 5dc303d6e340acf34e1a3c6db7ea722361474959[m
+Merge: ebc7881 02b1715
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sat Jul 11 18:50:16 2020 -0700
+
+    Merge branch 'atoofan-sprint-2' of https://github.com/hujbrown/Your-Voice-Heard into atoofan-sprint-2
+
+[33mcommit 02b1715312beb0c7c821a4cd27c9c7db48919291[m
+Author: Aubtin <atoofan@ucsc.edu>
+Date:   Sat Jul 11 18:45:21 2020 -0700
+
+    Added path for voting page
+
+[33mcommit ebc788154d958e9f45b2f2715dcefc8a1e9ad45a[m
+Merge: a2444bb 644a692
+Author: atoofan <67608294+atoofan@users.noreply.github.com>
+Date:   Sat Jul 11 17:33:50 2020 -0700
+
+    Merge pull request #16 from hujbrown/master
+    
+    Merge from master
+
+[33mcommit 644a692f4dbaf96f28023cbd7106bfe7e1d6d87e[m
+Merge: 37cb83e 03e5ff3
+Author: rivatadutta <67610418+rivatadutta@users.noreply.github.com>
+Date:   Sat Jul 11 03:51:05 2020 -0700
+
+    Merge branch 'rivatasprint2' into master
+
+[33mcommit 03e5ff31951b17f7968924b96ea0aaaf7dc341ad[m[33m ([m[1;31morigin/rivatasprint2[m[33m)[m
+Merge: eca6ca1 7c366d6
+Author: rivatadutta <67610418+rivatadutta@users.noreply.github.com>
+Date:   Sat Jul 11 03:41:32 2020 -0700
+
+    Merge branch 'master' into rivatasprint2
+
+[33mcommit eca6ca1ba5b52d7c377193563db102e6699ba313[m
+Author: rivatadutta <67610418+rivatadutta@users.noreply.github.com>
+Date:   Sat Jul 11 03:27:29 2020 -0700
+
+    updated urls/views for more tabs
+
+[33mcommit e0c2f34ca3cb320f00fd44ad5cb13e3619dc3a9d[m
+Author: rivatadutta <67610418+rivatadutta@users.noreply.github.com>
+Date:   Sat Jul 11 03:25:37 2020 -0700
+
+    need to cred photographers
+
+[33mcommit 8a82b0f84b9e12f0e48a4719ca52c7b3d77d3fd7[m
+Author: rivatadutta <67610418+rivatadutta@users.noreply.github.com>
+Date:   Sat Jul 11 03:23:56 2020 -0700
+
+    Add files via upload
+
+[33mcommit d317b852763852b62408d084f9613017f5f3a435[m
+Author: rivatadutta <67610418+rivatadutta@users.noreply.github.com>
+Date:   Sat Jul 11 03:22:40 2020 -0700
+
+    90% done, need to add blurbs + minor color/image tweaking
+
+[33mcommit 37cb83e98a89687fce39413d7148dbef4e88adad[m
+Author: Your Name <you@example.com>
+Date:   Sat Jul 11 03:18:20 2020 -0700
+
+    idk if its commiting properly
+
+[33mcommit e1d270da4fa34f9c1298e568dc5b38cfd3fe721c[m
+Author: rivatadutta <67610418+rivatadutta@users.noreply.github.com>
+Date:   Sat Jul 11 03:13:10 2020 -0700
+
+    Homepage 90% done. Need to add blurbs/minor color changes
