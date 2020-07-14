@@ -50,7 +50,7 @@ def elections2020(request):
 
 def vote(request):
     context = {}
-    return render(request, 'vote.html', context)
+    return redirect('emailreps:results')
 
 def upvote(request, id):
     ip = get_client_ip(request)
