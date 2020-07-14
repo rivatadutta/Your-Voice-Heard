@@ -2348,7 +2348,7 @@ ul.bottom_menu li {
 }
 
 .field input {
-    width: 100%;
+    width: 120%;
     background: #0e0606;
     min-height: 65px;
     border: none;
