@@ -101,6 +101,7 @@ def reps_page(request):
 
 
 def make_issue(request):
+    Issue.objects.all().delete()
     issue_form = IssueForm()
     curr_issues = reversed(Issue.objects.all())
     context = {'issue_form': issue_form, 'issues': curr_issues}

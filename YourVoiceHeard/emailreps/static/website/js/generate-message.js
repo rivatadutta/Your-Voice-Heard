@@ -20,11 +20,12 @@ function generateMessage(form){
 		// Pull values of all of the fields
 		var user_name = document.getElementById("messageForm").elements.namedItem("inputName").value;
 		var rep_name = document.getElementById("messageForm").elements.namedItem("repName").value;
-		var rep_type = document.getElementById("messageForm").elements.namedItem("rep_type").value;
+        var rep_type = document.getElementById("messageForm").elements.namedItem("rep_type").value;
+        var source_text = document.getElementById("source-text").innerHTML;
 		
 		// Create message with user input values
 		var line1 = "Dear " + rep_type + " " + rep_name + ",\n\n";
-		var body = "My name is " + user_name + " and Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n\n";
+		var body = "My name is " + user_name + " and I want you to listen to me about the following issue. " + source_text + "I urge you to take action.\n\n";
 		var closer = "Sincerely,\n" + user_name;
 		
 		var complete_message = line1 + body + closer;
