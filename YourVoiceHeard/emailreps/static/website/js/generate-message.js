@@ -20,8 +20,8 @@ function generateMessage(form){
 		// Pull values of all of the fields
 		var user_name = document.getElementById("messageForm").elements.namedItem("inputName").value;
 		var rep_name = document.getElementById("messageForm").elements.namedItem("repName").value;
-        var rep_type = document.getElementById("messageForm").elements.namedItem("rep_type").value;
-        var source_text = document.getElementById("source-text").innerHTML;
+        	var rep_type = document.getElementById("messageForm").elements.namedItem("rep_type").value;
+        	var source_text = document.getElementById("source-text").innerHTML;
 		
 		// Create message with user input values
 		var line1 = "Dear " + rep_type + " " + rep_name + ",\n\n";
@@ -31,6 +31,6 @@ function generateMessage(form){
 		var complete_message = line1 + body + closer;
 		
 		// Change innerHTML with generated message
-		document.getElementById("message").innerHTML = complete_message;
+		document.getElementById("message").value = complete_message;
 	}
 }
