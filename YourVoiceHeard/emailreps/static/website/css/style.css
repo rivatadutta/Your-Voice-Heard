@@ -105,7 +105,7 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-	opacity: .8
+	opacity: .9
 }
 
 a {
@@ -330,7 +330,7 @@ button:focus {
 }
 
 a:hover,a:focus {
-    color: transparent;
+    color: #4c4c4c;
     text-decoration: underline;
 }
 
@@ -375,7 +375,7 @@ a.join_bt {
 a.join_bt:hover,
 a.join_bt:focus {
 	background: #222;
-	color: #fff !important;
+	color: #4c4c4c !important;
 }
 
 .site_information {
@@ -459,7 +459,7 @@ a.navbar-brand {
 .top-header .navbar .navbar-collapse ul li a:hover, 
 .top-header .navbar .navbar-collapse ul li a:focus {
     background: ffe6cc;
-    color: #fff;
+    color: #4c4c4c;
 }
 
 .search_icon.nav-link img {
@@ -817,7 +817,7 @@ a.navbar-brand {
 
 .contact_bt:hover,
 .contact_bt:focus {
-    color: #fff;
+    color: #4c4c4c;
 }
 
 .dark_bg .contact_bt {
@@ -942,7 +942,7 @@ a.navbar-brand {
 
 .about-m ul li a:hover {
 	background: #333333;
-	color: #000000;
+	color: #ffffff;
 }
 
 .about-main-info h2 {
@@ -1156,7 +1156,7 @@ figure figcaption>a {
 }
 
 figure.effect-service:hover img {
-	opacity: 0.6;
+	opacity: 0.9;
 }
 
 figure.effect-service:hover p {
@@ -1381,7 +1381,7 @@ figure.effect-service:hover {
 	height: 100%;
 	width: 100%;
 	background: rgba(0, 0, 0, .5);
-	color: #fff;
+	color: #4c4c4c;
 	-webkit-transition: all .9s ease;
 	-moz-transition: all .9s ease;
 	-o-transition: all .9s ease;
@@ -2385,7 +2385,7 @@ ul.bottom_menu li {
 
 .contact_form_inner button:hover,
 .contact_form_inner button:focus {
-    color: #fff;
+    color: #000;
     background: #050000;
 }
 
