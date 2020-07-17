@@ -29,7 +29,7 @@ sen_rows = sen_table.find_elements_by_tag_name('tr')
 # Prints the name of the representative and their link
 with open('senators.csv', 'w', newline='') as csvfile:
     sen_writer = csv.writer(csvfile, delimiter = ',')
-    sen_writer.writerow(['Senator', 'State', 'Website'])
+    sen_writer.writerow(['Senator', 'State', 'Website', 'Party'])
     print('Senators')
     for row in sen_rows:
         senator = row.find_elements_by_tag_name('td')
@@ -38,7 +38,8 @@ with open('senators.csv', 'w', newline='') as csvfile:
         if senator[1].text == 'California':
             name = senator[0].text
             website = senator[0].find_element_by_tag_name('a').get_attribute('href')
-            sen_writer.writerow([name, 'California', website])
+            party = senator[2].text
+            sen_writer.writerow([name, 'California', website, party])
             print(name,website)
     print()
 # Representatives
@@ -61,7 +62,7 @@ cali_reps = cali_table.find_elements_by_tag_name('tr')
 
 with open('representatives.csv', 'w', newline='') as csvfile:
     rep_writer = csv.writer(csvfile, delimiter = ',')
-    rep_writer.writerow(['Representative', 'State', 'Website', 'Committee'])
+    rep_writer.writerow(['Representative', 'State', 'Website', 'Committee', 'Party', 'District'])
     for rep in cali_reps:
         rep_data = rep.find_elements_by_tag_name('td')
         if len(rep_data) < 1:
@@ -69,7 +70,13 @@ with open('representatives.csv', 'w', newline='') as csvfile:
         name = rep_data[1].text.replace('(link is external)', '')
         website = rep_data[1].find_element_by_tag_name('a').get_attribute('href')
         committee = rep_data[5].text
-        rep_writer.writerow([name, 'California', website, committee])
+        party = rep_data[2].text
+        district = rep_data[0].text
+        if party == 'R':
+            party = 'Republican'
+        elif party == 'D':
+            party = 'Democrat'
+        rep_writer.writerow([name, 'California', website, committee, party, district])
         print(name,website,committee)
 
 

@@ -63,7 +63,7 @@
                         <ul>
                             <li><a href="mailto:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/mail_icon.png' %}" alt="#" />yourvoiceheard115@gmail.com</a></li>
                             <li><a href="tel:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/phone_icon.png' %}" alt="#" />N/A</a></li>
-                            <li><a class="join_bt" href="#">We need your voice</a></li>
+                            <li><a class="join_bt" href="{% url 'emailreps:vote' %}">We need your voice</a></li>
                         </ul>
                     </div>
                 </div>
@@ -128,15 +128,15 @@
                         </div>
                     </div>
                     <div class="full paddding_left_15">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <p class="text-light" id="source-text">Global warming is the ongoing rise of the average temperature of the Earth's climate system. It is a major aspect of climate change which, in addition to rising global surface temperatures, also includes its effects, such as changes in precipitation. While there have been prehistoric periods of global warming, observed changes since the mid-20th century have been unprecedented in rate and scale. </p>
                     </div>
                     <div class="full paddding_left_15">
-                        <a class="main_bt" href="#">Read More ></a>
+                        <a class="main_bt" href="https://en.wikipedia.org/wiki/Global_warming">Read More ></a>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="full text_align_right_img">
-                        <img src=""{% static 'website/images/img3.png' %}" alt="#" />
+                        <img src="{% static 'website/images/img3.png' %}" alt="#" />
                     </div>
                 </div>
             </div>
@@ -156,11 +156,11 @@
                 <div class="col-md-6 layout_padding">
                     <div class="full paddding_left_15">
                         <div class="heading_main text_align_left">
-						   <h2><span class="theme_color">Welcome</span> To Exchange</h2>
+						   <h2><span class="theme_color">Please</span> Send A Message</h2>
                         </div>
                     </div>
                     <div class="full paddding_left_15">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <p class="text-light">Please send a message to let your voice be heard.</p>
                     </div>
                     <div class="full paddding_left_15">
                         <a class="main_bt" href="#">About more ></a>
@@ -175,23 +175,44 @@
     <div class="section white_fonts" style="background: #111;">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" style="background: #fff;">
-                    <div class="full text_align_right_img">
-                        <img src="{% static 'website/images/img2.png' %}" alt="#" />
+                <div class="col-md-6 layout_padding">
+                    <div class="full paddding_left_15">
+                        <div class="heading_main text_align_left">
+                           <h2>Your Message</h2>    
+                        </div>
+                    </div>
+                    <div class="field">
+                        <textarea id ="message" name="message" rows="11" cols="50"></textarea>
                     </div>
                 </div>
                 <div class="col-md-6 layout_padding">
                     <div class="full paddding_left_15">
                         <div class="heading_main text_align_left">
-                           <h2><span class="theme_color">Apply for</span> Exchange</h2>
+                           <h2>Generate Your Message</h2>    
                         </div>
                     </div>
-                    <div class="full paddding_left_15">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <div class="col-lg-9 col-sm-18">
+                    <div class="full">
+                        <form class="contact_form_inner" id="messageForm" action="#">
+                            <fieldset>
+                                <div class="field">
+                                    <input type="text" name="inputName" placeholder="Your name" required />
+                                </div>
+                                <div class="field">
+                                    <input type="text" name="repName" placeholder="Representative / Senator Name" required />
+                                </div>
+								<div>
+									<input type="radio" id="radio_rep" name="rep_type" value="Representative" required>
+									<label for="male">Representative</label><br>
+									<input type="radio" id="radio_rep" name="rep_type" value="Senator">
+									<label for="female">Senator</label><br>
+                                <div class="field">
+                                     <button type="button" onclick="generateMessage(this.form)">GENERATE</button>
+                                </div>
+                            </fieldset>
+                        </form>
                     </div>
-                    <div class="full paddding_left_15">
-                        <a class="main_bt" href="#">Exchange ></a>
-                    </div>
+					</div>
                 </div>
             </div>
         </div>
@@ -208,41 +229,6 @@
                                 <img class="img-responsive" src="{% static 'website/images/footer_logo.png' %}" alt="#" />
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <h3>Quick Links</h3>
-                            </div>
-                            <div class="full">
-                                <ul class="menu_footer">
-                                    <li><a href="{% url 'emailreps:index' %}">> Home</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <div class="footer_blog full white_fonts">
-                             <h3>Newsletter</h3>
-                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                             <div class="newsletter_form">
-                                <form action="index.html">
-                                   <input type="email" placeholder="Your Email" name="#" required="">
-                                   <button>Submit</button>
-                                </form>
-                             </div>
-                         </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <div class="footer_blog full white_fonts">
-                             <h3>Contact us</h3>
-                             <ul class="full">
-                                <li><img src="{% static 'website/images/i5.png' %}"><span>California<br>United States</span></li>
-                                <li><img src="{% static 'website/images/i6.png' %}"><span>yourvoiceheard115@gmail.com</span></li>
-                                <li><img src="{% static 'website/images/i7.png' %}"><span>Number N/A</span></li>
-                             </ul>
-                         </div>
-                            </div>
                         </div>
 					</div>
                 </div>
@@ -255,7 +241,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="crp">© Copyrights 2019 design by html.design</p>
+                    <p class="crp">©Created by Students at University of California, Santa Cruz.</p>
                 </div>
             </div>
         </div>
@@ -267,8 +253,9 @@
     <script src="{% static 'website/js/jquery.min.js' %}"></script>
 	<script src="{% static 'website/js/popper.min.js' %}"></script>
     <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
-	
+
     <!-- ALL PLUGINS -->
+	<script src="{% static 'website/js/generate-message.js' %}"></script>
     <script src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
     <script src="{% static 'website/js/jquery.pogo-slider.min.js' %}"></script>
     <script src="{% static 'website/js/slider-index.js' %}"></script>
@@ -278,6 +265,6 @@
     <script src="{% static 'website/js/isotope.min.js' %}"></script>
     <script src="{% static 'website/js/images-loded.min.js' %}"></script>
     <script src="{% static 'website/js/custom.js' %}"></script>
-	
+
 </body>
 </html>
