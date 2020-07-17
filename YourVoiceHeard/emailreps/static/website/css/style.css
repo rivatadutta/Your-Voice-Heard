@@ -105,7 +105,7 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-	opacity: .9
+	opacity: .8
 }
 
 a {
@@ -330,7 +330,7 @@ button:focus {
 }
 
 a:hover,a:focus {
-    color: #4c4c4c;
+    color: transparent;
     text-decoration: underline;
 }
 
@@ -375,7 +375,7 @@ a.join_bt {
 a.join_bt:hover,
 a.join_bt:focus {
 	background: #222;
-	color: #4c4c4c !important;
+	color: #fff !important;
 }
 
 .site_information {
@@ -459,7 +459,7 @@ a.navbar-brand {
 .top-header .navbar .navbar-collapse ul li a:hover, 
 .top-header .navbar .navbar-collapse ul li a:focus {
     background: ffe6cc;
-    color: #4c4c4c;
+    color: #fff;
 }
 
 .search_icon.nav-link img {
@@ -817,7 +817,7 @@ a.navbar-brand {
 
 .contact_bt:hover,
 .contact_bt:focus {
-    color: #4c4c4c;
+    color: #fff;
 }
 
 .dark_bg .contact_bt {
@@ -942,7 +942,7 @@ a.navbar-brand {
 
 .about-m ul li a:hover {
 	background: #333333;
-	color: #ffffff;
+	color: #000000;
 }
 
 .about-main-info h2 {
@@ -1156,7 +1156,7 @@ figure figcaption>a {
 }
 
 figure.effect-service:hover img {
-	opacity: 0.9;
+	opacity: 0.6;
 }
 
 figure.effect-service:hover p {
@@ -1381,7 +1381,7 @@ figure.effect-service:hover {
 	height: 100%;
 	width: 100%;
 	background: rgba(0, 0, 0, .5);
-	color: #4c4c4c;
+	color: #fff;
 	-webkit-transition: all .9s ease;
 	-moz-transition: all .9s ease;
 	-o-transition: all .9s ease;
@@ -2243,7 +2243,7 @@ ul.social_icon li {
 
 .news_blog:hover .blog_details,
 .news_blog:focus .blog_details {
-    opacity: 0;
+    opacity: 1;
 }
 
 .blog_details h3 {
@@ -2385,7 +2385,7 @@ ul.bottom_menu li {
 
 .contact_form_inner button:hover,
 .contact_form_inner button:focus {
-    color: #000;
+    color: #fff;
     background: #050000;
 }
 
