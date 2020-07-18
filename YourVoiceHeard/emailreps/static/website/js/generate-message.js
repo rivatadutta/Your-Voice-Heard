@@ -49,28 +49,16 @@ function generateEmail(form){
 			alert("Please fill all required fields");
 			return false;
 		}
-		
 		// Pull values of all of the fields
 		var user_fname = document.getElementById("messageForm02").elements.namedItem("inputFirstName_02").value;
 		var user_lname = document.getElementById("messageForm02").elements.namedItem("inputLastName_02").value;
-		
 		var subject = "Black Lives Matter";
 		var person = document.getElementById("messageForm02").elements.namedItem("orgs").value;
         var source_text = document.getElementById("source-text").innerHTML;
 		var email;
 		
-		// Switch to determine email
-		switch (person) {
-			case "Greg Fischer":
-				email =  "Greg.Fischer@louisvilleky.gov";
-				break;
-			case: "Jacob Frey":
-				email = "Jacob.Frey@minneapolismn.gov";
-				break;
-			default:
-				email = "example@gmail.com";
-				break;
-		}
+		if (person == "Greg Fischer") {email = "Greg.Fischer@louisvilleky.gov";}
+		else if (person == "Jacob Frey") {email = "Jacob.Frey@minneapolismn.gov";}
 		
 		// Create message with user input values
 		var line1 = "Dear " + person + ",\n\n";
