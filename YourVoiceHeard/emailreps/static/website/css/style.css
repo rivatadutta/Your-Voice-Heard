@@ -979,7 +979,7 @@ a.navbar-brand {
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 	position: relative;
 	overflow: hidden;
-	background: #070500;
+	background: #fff;
 	-webkit-transition-property: color;
 	transition-property: color;
 	-webkit-transition-duration: 0.3s;
@@ -2243,7 +2243,7 @@ ul.social_icon li {
 
 .news_blog:hover .blog_details,
 .news_blog:focus .blog_details {
-    opacity: 0;
+    opacity: 1;
 }
 
 .blog_details h3 {
@@ -2348,7 +2348,7 @@ ul.bottom_menu li {
 }
 
 .field input {
-    width: 120%;
+    width: 100%;
     background: #0e0606;
     min-height: 65px;
     border: none;
@@ -2357,6 +2357,25 @@ ul.bottom_menu li {
     padding: 0 25px;
     font-size: 17px;
     font-weight: 300;
+}
+
+.field select {
+    width: 100%;
+    background: #0e0606;
+    min-height: 50px;
+    border: none;
+    margin: 15px 0;
+    color: #fff;
+    padding: 25px 25px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.field select optgroup{
+    background:#b01c1c;
+    color:#fff;
+    font-style:normal;
+    font-weight:normal;
 }
 
 .field textarea {
@@ -2375,6 +2394,7 @@ ul.bottom_menu li {
     width: 210px;
     height: 60px;
     border: none;
+	margin: 0 15px;
     font-size: 20px;
     color: #050000;
     line-height: 62px;
