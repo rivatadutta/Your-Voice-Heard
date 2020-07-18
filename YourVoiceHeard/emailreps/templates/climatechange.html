@@ -182,7 +182,7 @@
                         </div>
                     </div>
                     <div class="field">
-                        <textarea id ="message" name="message" rows="11" cols="50"></textarea>
+                        <textarea id ="message" name="message" rows="12" cols="50"></textarea>
                     </div>
                 </div>
                 <div class="col-md-6 layout_padding">
@@ -193,24 +193,37 @@
                     </div>
                     <div class="col-lg-9 col-sm-18">
                     <div class="full">
-                        <form class="contact_form_inner" id="messageForm" action="#">
+                        <form class="contact_form_inner" id="messageForm01" action="#">
                             <fieldset>
                                 <div class="field">
-                                    <input type="text" name="inputName" placeholder="Your name" required />
+                                    <input type="text" name="inputFirstName_01" placeholder="First Name" required />
                                 </div>
                                 <div class="field">
-                                    <input type="text" name="repName" placeholder="Representative / Senator Name" required />
+                                    <input type="text" name="inputLastName_01" placeholder="Last Name" required />
                                 </div>
-								<div>
-									<input type="radio" id="radio_rep" name="rep_type" value="Representative" required>
-									<label for="male">Representative</label><br>
-									<input type="radio" id="radio_rep" name="rep_type" value="Senator">
-									<label for="female">Senator</label><br>
+								<div class="field">
+									<select id ="reps_select" name="reps_select">
+										<option value="disabledSelect" disabled selected>Your California Officials</option>
+										<optgroup label = "Senators">
+											{% for sen in sens %}
+												<option value="{{sen.sen_name}}">{{sen.sen_name}}</option>
+											{% endfor %}
+										</optgroup>
+										<optgroup label = "Representatives">
+											{% for rep in reps %}
+												<option value="{{rep.rep_name}}">{{rep.rep_name}}</option>
+											{% endfor %}
+										</optgroup>
+									</select>
+								</div>
                                 <div class="field">
-                                     <button type="button" onclick="generateMessage(this.form)">GENERATE</button>
+									 <button type="button" onclick="location.href='https://www.usa.gov/elected-officials';">YOUR OFFICIALS</button>
+									 <p> </p>
+                                     <button type="button" onclick="generate(this.form)">GENERATE</button>
                                 </div>
                             </fieldset>
                         </form>
+                    </div>
                     </div>
 					</div>
                 </div>
@@ -218,6 +231,7 @@
         </div>
     </div>
     <!-- end section -->
+	
     <!-- Start Footer -->
     <footer class="footer-box">
         <div class="container">
