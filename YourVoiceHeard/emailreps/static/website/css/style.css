@@ -630,6 +630,7 @@ a.navbar-brand {
 }
 
 .main_bt:hover, .main_bt:active {
+		color: white;
 		background: gray;
 }
 
@@ -2231,7 +2232,7 @@ ul.social_icon li {
 .main_bt.transparent {
     background: transparent;
     border-color: #fff;
-    color: #fff;
+    color: #000000;
     cursor: pointer;
 }
 
