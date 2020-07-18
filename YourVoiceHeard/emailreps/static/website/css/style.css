@@ -629,8 +629,7 @@ a.navbar-brand {
     font-weight: 500;
 }
 
-.main_bt:hover, .main_bt:active .main_bt:link {
-		color: white;
+.main_bt:hover, .main_bt:active {
 		background: gray;
 }
 
