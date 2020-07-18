@@ -20,22 +20,30 @@ def index(request):
 
 # Black Lives Matter Page
 def blm(request):
-    context = {}
+    reps = Representative.objects.all()
+    senators = Senator.objects.all()
+    context = {'reps': reps, 'sens': senators}
     return render(request, 'blm.html', context)
 
 # Ice Page
 def ice(request):
-    context = {}
+    reps = Representative.objects.all()
+    senators = Senator.objects.all()
+    context = {'reps': reps, 'sens': senators}
     return render(request, 'ice.html', context)
 
 # Yemen Page
 def yemen(request):
-    context = {}
+    reps = Representative.objects.all()
+    senators = Senator.objects.all()
+    context = {'reps': reps, 'sens': senators}
     return render(request, 'yemen.html', context)
 
 # Climate Change Page
 def climatechange(request):
-    context = {}
+    reps = Representative.objects.all()
+    senators = Senator.objects.all()
+    context = {'reps': reps, 'sens': senators}
     return render(request, 'climatechange.html', context)
 
 # Issue proposal page
