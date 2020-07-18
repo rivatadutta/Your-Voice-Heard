@@ -617,6 +617,7 @@ a.navbar-brand {
 }
 
 .main_bt {
+		color: #000000;
     width: 220px;
     height: 55px;
     float: left;
@@ -2232,7 +2233,7 @@ ul.social_icon li {
 .main_bt.transparent {
     background: transparent;
     border-color: #fff;
-    color: #000000;
+    color: #fff;
     cursor: pointer;
 }
 
