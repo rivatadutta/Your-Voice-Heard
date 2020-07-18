@@ -114,10 +114,6 @@ a {
 	outline: none;
 }
 
-.a:active {
-	color: #000;
-}
-
 .dark_bg {
 	background: #000;
 }
@@ -621,7 +617,7 @@ a.navbar-brand {
 }
 
 .main_bt {
-		color: #000000;
+		color: black;
     width: 220px;
     height: 55px;
     float: left;
