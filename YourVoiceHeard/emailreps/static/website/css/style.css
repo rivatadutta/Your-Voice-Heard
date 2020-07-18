@@ -114,6 +114,10 @@ a {
 	outline: none;
 }
 
+.a:active {
+	color: #000;
+}
+
 .dark_bg {
 	background: #000;
 }
@@ -2233,7 +2237,7 @@ ul.social_icon li {
 .main_bt.transparent {
     background: transparent;
     border-color: #fff;
-    color: #000000;
+    color: #fff;
     cursor: pointer;
 }
 
