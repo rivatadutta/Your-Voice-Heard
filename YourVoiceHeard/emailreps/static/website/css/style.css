@@ -330,7 +330,8 @@ button:focus {
 }
 
 a:hover,a:focus {
-    color: black;
+		color: white;
+		background: gray;
     text-decoration: underline;
 }
 
@@ -628,11 +629,6 @@ a.navbar-brand {
     margin-top: 10px;
     background: #fff;
     font-weight: 500;
-}
-
-.main_bt:active {
-		color: white;
-		background: gray;
 }
 
 .paddding_left_15 {
