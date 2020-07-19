@@ -373,7 +373,7 @@ a.join_bt {
 }
 
 a.join_bt:hover,
-a.join_bt:focus {
+a.join_bt:active {
 	background: #222;
 	color: #fff !important;
 }
