@@ -163,7 +163,7 @@ ol {
 	padding: 0px;
 }
 
-button:active {
+button:focus {
 	outline: none;
 }
 
@@ -375,7 +375,7 @@ a.join_bt {
 a.join_bt:hover,
 a.join_bt:active {
 	background: #222;
-	color: #fff !important;
+	color: #fff;
 }
 
 .site_information {
