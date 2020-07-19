@@ -330,7 +330,7 @@ button:focus {
 }
 
 a:hover,a:focus {
-    color: transparent;
+    color: black;
     text-decoration: underline;
 }
 
