@@ -2410,7 +2410,7 @@ ul.bottom_menu li {
 
 
 .contact_form_inner button:hover,
-.contact_form_inner button:focus {
+.contact_form_inner button:active {
     color: #fff;
     background: #050000;
 }
