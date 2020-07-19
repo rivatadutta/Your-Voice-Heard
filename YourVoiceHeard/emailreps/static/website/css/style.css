@@ -329,9 +329,8 @@ button:focus {
 	border-radius: 100%;
 }
 
-a:hover,a:focus {
-		color: white;
-		background: gray;
+a:hover,a:active {
+    color: transparent;
     text-decoration: underline;
 }
 
@@ -629,6 +628,11 @@ a.navbar-brand {
     margin-top: 10px;
     background: #fff;
     font-weight: 500;
+}
+
+.main_bt:active {
+		color: white;
+		background: gray;
 }
 
 .paddding_left_15 {
