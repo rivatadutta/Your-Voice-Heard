@@ -163,7 +163,7 @@ ol {
 	padding: 0px;
 }
 
-button:focus {
+button:active {
 	outline: none;
 }
 
@@ -2410,7 +2410,7 @@ ul.bottom_menu li {
 
 
 .contact_form_inner button:hover,
-.contact_form_inner button:active {
+.contact_form_inner button:focus {
     color: #fff;
     background: #050000;
 }
