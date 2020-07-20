@@ -7,7 +7,7 @@
 1. Clone the repository
 2. Under Your-Voice-Heard/YourVoiceHeard run in a terminal:
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 3. Under Your-Voice-Heard/YourVoiceHeard run the following in a terminal:
 ```
