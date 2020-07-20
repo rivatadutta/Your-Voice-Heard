@@ -1,5 +1,5 @@
-/*------------------------------------------------------------------
-    IMPORT FONTS
+/*------------------------------------------------------------------ 
+    IMPORT FONTS 
 -------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
@@ -8,8 +8,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
-/*------------------------------------------------------------------
-    IMPORT FILES
+/*------------------------------------------------------------------ 
+    IMPORT FILES 
 -------------------------------------------------------------------*/
 
 @import url(animate.css);
@@ -19,7 +19,7 @@
 @import url(timeline.css);
 @import url(flaticon.css);
 
-/*------------------------------------------------------------------
+/*------------------------------------------------------------------ 
     SKELETON
 -------------------------------------------------------------------*/
 
@@ -173,8 +173,8 @@ button:focus {
 }
 
 
-/*------------------------------------------------------------------
-   LOADER
+/*------------------------------------------------------------------ 
+   LOADER 
 -------------------------------------------------------------------*/
 
 #preloader {
@@ -456,7 +456,7 @@ a.navbar-brand {
     color: #fff;
 }
 
-.top-header .navbar .navbar-collapse ul li a:hover,
+.top-header .navbar .navbar-collapse ul li a:hover, 
 .top-header .navbar .navbar-collapse ul li a:focus {
     background: ffe6cc;
     color: #fff;
@@ -617,7 +617,6 @@ a.navbar-brand {
 }
 
 .main_bt {
-		color: black;
     width: 220px;
     height: 55px;
     float: left;
@@ -628,11 +627,6 @@ a.navbar-brand {
     margin-top: 10px;
     background: #fff;
     font-weight: 500;
-}
-
-.main_bt:active, .main_bt:hover {
-		color: white;
-		background: gray;
 }
 
 .paddding_left_15 {
@@ -1019,7 +1013,6 @@ a.navbar-brand {
 }
 
 .hvr-radial-out:hover::before,
-.hvr-radial-out:focus::before,
 .hvr-radial-out:focus::before {
 	-webkit-transform: scale(2);
 	transform: scale(2);
@@ -2414,3 +2407,4 @@ ul.bottom_menu li {
     color: #fff;
     background: #050000;
 }
+
