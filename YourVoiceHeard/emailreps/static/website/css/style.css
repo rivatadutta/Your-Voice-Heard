@@ -349,15 +349,15 @@ a:hover,a:focus {
 /*------------------------------------------------------------------ Ff -------------------------------------------------------------------*/
 
 .header_top {
-    min-height: 90px;
+    min-height: 80px;
     padding: 12px 0;
-    height:90px;
-    background: rgb(176, 28, 28, .25);
+    height:80px;
+    background: #cc2020;
 }
 
 .site_information ul {
     float: right;
-    width: 95%;
+    width: 100%;
     padding: 21px 0;
 }
 
@@ -380,7 +380,6 @@ a.join_bt:focus {
 
 .site_information {
     float: left;
-    width: 66.66%;
 }
 
 .site_information ul {
@@ -391,18 +390,24 @@ a.join_bt:focus {
     float: left;
     width: 33.33%;
     display: flex;
-    justify-content: center;
     font-size: 17px;
     font-weight: 300;
     font-color: #fff;
+    margin-left: 150px;
+    margin-top: -10px;
+    margin-right: -40px;
 }
 
 .site_information ul li img {
-    margin-right: 10px;
+    margin-right: 160px;
+    display: inline;
+    margin-top: -20px;
 }
 
 .logo_section {
     width: 33.33%;
+    margin-left: -170px;
+    margin-top: -15px;
 }
 
 .top-header .navbar {
@@ -419,7 +424,7 @@ a.join_bt:focus {
     z-index: 20;
     background-position: left;
     background-repeat: no-repeat;
-    background-color: #6e1111;
+    background-color: #cc2020;
     background-size: auto 20%;
     width: 100%;
 }
@@ -452,13 +457,13 @@ a.navbar-brand {
 }
 
 .top-header .navbar .navbar-collapse ul li a.active {
-	background: ffe6cc;
+	background: #ffe6cc;
     color: #fff;
 }
 
 .top-header .navbar .navbar-collapse ul li a:hover, 
 .top-header .navbar .navbar-collapse ul li a:focus {
-    background: ffe6cc;
+    background: #ffe6cc;
     color: #fff;
 }
 
@@ -497,7 +502,7 @@ a.navbar-brand {
     display: block;
     right: 0;
     content: "";
-    background: transparent;
+    background: #000;
     height: 20px;
     position: absolute;
     top: 0;
@@ -722,11 +727,11 @@ a.navbar-brand {
 }
 
 .pogoSlider-nav-btn {
-	background: #fff;
+	background: #990000;
 }
 
 .pogoSlider-nav-btn--selected {
-	background: #990000 !important;
+	background: #fff !important;
 }
 
 .pogoSlider--navBottom .pogoSlider-nav {
@@ -979,7 +984,7 @@ a.navbar-brand {
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 	position: relative;
 	overflow: hidden;
-	background: #070500;
+	background: #fff;
 	-webkit-transition-property: color;
 	transition-property: color;
 	-webkit-transition-duration: 0.3s;
@@ -1732,7 +1737,7 @@ p.count-text {
 .contact-block {}
 
 .contact-block .form-group .form-control {
-	background: #333;
+	background: #fff;
 	height: 48px;
 	font-size: 14px;
 	border: 0;
@@ -1915,6 +1920,11 @@ p {
 .text_align_right_img img {
     float: right;
 }
+
+.text_align_center_img img {
+    float: center;
+}
+
 
 .red_bg {
 	background: #e91327;
@@ -2243,7 +2253,7 @@ ul.social_icon li {
 
 .news_blog:hover .blog_details,
 .news_blog:focus .blog_details {
-    opacity: 0;
+    opacity: 1;
 }
 
 .blog_details h3 {
@@ -2328,16 +2338,8 @@ ul.bottom_menu li {
 	background: #111;
 }
 
-.top-header.fixed-menu .search-btn img {
-    width: 25px;
-}
 
-.top-header.fixed-menu .search-box:hover .search-txt {
-	width: 240px;
-	padding: 0 10px;
-	border: solid #000 1px;
-	height: 41px;
-}
+
 
 .contact_form {
     background: url('../images/contact_bg.png');
@@ -2359,6 +2361,25 @@ ul.bottom_menu li {
     font-weight: 300;
 }
 
+.field select {
+    width: 100%;
+    background: #0e0606;
+    min-height: 50px;
+    border: none;
+    margin: 15px 0;
+    color: #fff;
+    padding: 25px 25px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.field select optgroup{
+    background:#b01c1c;
+    color:#fff;
+    font-style:normal;
+    font-weight:normal;
+}
+
 .field textarea {
     width: 100%;
     background: #0e0606;
@@ -2375,6 +2396,7 @@ ul.bottom_menu li {
     width: 210px;
     height: 60px;
     border: none;
+	margin: 0 15px;
     font-size: 20px;
     color: #050000;
     line-height: 62px;
