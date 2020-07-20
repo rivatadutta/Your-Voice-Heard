@@ -451,7 +451,7 @@ a.navbar-brand {
 	position: relative;
 }
 
-.top-header .navbar .navbar-collapse ul li a.active {
+.top-header .navbar .navbar-collapse ul li a.focus {
 	background: ffe6cc;
     color: #fff;
 }
@@ -1013,8 +1013,7 @@ a.navbar-brand {
 }
 
 .hvr-radial-out:hover::before,
-.hvr-radial-out:focus::before,
-.hvr-radial-out:active::before {
+.hvr-radial-out:focus::before {
 	-webkit-transform: scale(2);
 	transform: scale(2);
 }
@@ -1964,7 +1963,7 @@ p {
 	background: #999;
 }
 
-#client_slider .carousel-indicators li.active {
+#client_slider .carousel-indicators li.focus {
 	background: #e91327;
 }
 
