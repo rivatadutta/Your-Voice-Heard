@@ -1,5 +1,5 @@
-/*------------------------------------------------------------------ 
-    IMPORT FONTS 
+/*------------------------------------------------------------------
+    IMPORT FONTS
 -------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
@@ -8,8 +8,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
-/*------------------------------------------------------------------ 
-    IMPORT FILES 
+/*------------------------------------------------------------------
+    IMPORT FILES
 -------------------------------------------------------------------*/
 
 @import url(animate.css);
@@ -19,7 +19,7 @@
 @import url(timeline.css);
 @import url(flaticon.css);
 
-/*------------------------------------------------------------------ 
+/*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
 
@@ -163,7 +163,7 @@ ol {
 	padding: 0px;
 }
 
-button:focus {
+button:active {
 	outline: none;
 }
 
@@ -173,8 +173,8 @@ button:focus {
 }
 
 
-/*------------------------------------------------------------------ 
-   LOADER 
+/*------------------------------------------------------------------
+   LOADER
 -------------------------------------------------------------------*/
 
 #preloader {
@@ -329,7 +329,7 @@ button:focus {
 	border-radius: 100%;
 }
 
-a:hover,a:focus {
+a:hover,a:active {
     color: transparent;
     text-decoration: underline;
 }
@@ -373,7 +373,7 @@ a.join_bt {
 }
 
 a.join_bt:hover,
-a.join_bt:focus {
+a.join_bt:active {
 	background: #222;
 	color: #fff !important;
 }
@@ -451,13 +451,13 @@ a.navbar-brand {
 	position: relative;
 }
 
-.top-header .navbar .navbar-collapse ul li a.focus {
+.top-header .navbar .navbar-collapse ul li a.active {
 	background: ffe6cc;
     color: #fff;
 }
 
-.top-header .navbar .navbar-collapse ul li a:hover, 
-.top-header .navbar .navbar-collapse ul li a:focus {
+.top-header .navbar .navbar-collapse ul li a:hover,
+.top-header .navbar .navbar-collapse ul li a:active {
     background: ffe6cc;
     color: #fff;
 }
@@ -627,6 +627,11 @@ a.navbar-brand {
     margin-top: 10px;
     background: #fff;
     font-weight: 500;
+}
+
+.main_bt:hover, .main_bt:active {
+	background-color: #666;
+  color: white;
 }
 
 .paddding_left_15 {
@@ -816,7 +821,7 @@ a.navbar-brand {
 }
 
 .contact_bt:hover,
-.contact_bt:focus {
+.contact_bt:active {
     color: #fff;
 }
 
@@ -1013,13 +1018,13 @@ a.navbar-brand {
 }
 
 .hvr-radial-out:hover::before,
-.hvr-radial-out:focus::before {
+.hvr-radial-out:active::before {
 	-webkit-transform: scale(2);
 	transform: scale(2);
 }
 
 a.hvr-radial-out:hover,
-a.hvr-radial-out:focus {
+a.hvr-radial-out:active {
 	color: #fff;
 }
 
@@ -1039,7 +1044,7 @@ a.hvr-radial-out:focus {
     margin-bottom: 30px;
 }
 
-.service_blog:hover, .service_blog:focus {
+.service_blog:hover, .service_blog:active {
     box-shadow: 0 0 30px 0 rgba(0,0,0,.2);
     transform: scale(1.02);
 }
@@ -1502,7 +1507,7 @@ p.count-text {
 }
 
 .team_member_img:hover .social_icon_team,
-.team_member_img:focus .social_icon_team {
+.team_member_img:active .social_icon_team {
 	opacity: 1;
 }
 
@@ -1794,7 +1799,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .menu_footer li a:hover,
-.menu_footer li a:focus {
+.menu_footer li a:active {
 	color: #d66c0b !important;
 }
 
@@ -1963,7 +1968,7 @@ p {
 	background: #999;
 }
 
-#client_slider .carousel-indicators li.focus {
+#client_slider .carousel-indicators li.active {
 	background: #e91327;
 }
 
@@ -2219,7 +2224,7 @@ ul.social_icon li {
 }
 
 .news_blog:hover .overlay,
-.news_blog:focus .overlay {
+.news_blog:active .overlay {
 	opacity: 1;
 }
 
@@ -2241,7 +2246,7 @@ ul.social_icon li {
 }
 
 .news_blog:hover .blog_details,
-.news_blog:focus .blog_details {
+.news_blog:active .blog_details {
     opacity: 1;
 }
 
@@ -2403,8 +2408,7 @@ ul.bottom_menu li {
 
 
 .contact_form_inner button:hover,
-.contact_form_inner button:focus {
+.contact_form_inner button:active {
     color: #fff;
     background: #050000;
 }
-
