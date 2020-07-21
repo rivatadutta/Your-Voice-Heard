@@ -53,7 +53,6 @@
     <!-- Start header -->
     <header class="top-header">
         <div class="header_top">
-
             <div class="container">
                 <div class="row">
                     <div class="logo_section">
@@ -62,7 +61,7 @@
                     <div class="site_information">
                         <ul>
                             <li><a href="mailto:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/mail_icon.png' %}" alt="#" />yourvoiceheard115@gmail.com</a></li>
-                            <li><a class="join_bt" href="{% url 'emailreps:vote' %}">We need your voice</a></li>
+                            <li><a class="join_bt" href="{% url 'emailreps:blm' %}">Sign BLM Petitions</a></li>
                         </ul>
                     </div>
                 </div>
@@ -88,6 +87,7 @@
                          <li><a class="nav-link" href="{% url 'emailreps:2020elections' %}">2020 Elections</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:caofficals' %}">About CA Officals</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:proposeissues' %}">Propose Issues Relevant to YOU</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:results' %}">Top Voted Issues</a></li>
                     </ul>
                 </div>
                      </div>
@@ -122,7 +122,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="slide_text white_fonts">
-                                        <h3>Silence is <br><strong><i>Violence</i></strong></h3>
+                                        <h5>Send Pre-made Emails to Officials<br><strong><i> Silence is Violence</i></strong></h5>
                                     </div>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@
             <div class="row">
                 <div class="col-md-6">
                      <div class="full paddding_left_15">
-                        <div class="full text_align_right_img" style ="padding-top: -18px; padding-bottom: 25px; padding-right: 5px;">
+                        <div class="full text_align_left_img" style ="padding-top: -18px; padding-bottom: 25px; padding-right: 5px;">
                             <br><img src="{% static 'website/images/blmindex.jpg' %}" alt="#" />
                         </div>
                      </div>
@@ -164,10 +164,10 @@
 
 "
     <!-- ICE section -->
-    <div class="section layout_padding about_bg">
+    <div class="section">
         <div class="container" style="padding: 5px; border-bottom: solid 1px #b01c1c">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 layout_padding">
                     <div class="full paddding_left_15">
                         <div class="heading_main text_align_left">
                            <h2>How Can <br><span class="theme_color">You Take Action?</span></h2>
@@ -179,8 +179,9 @@
                 </div>
                 <div class="col-md-6">
                     <div class="full paddding_left_15">
-                        <div class="full text_align_right_img">
-                            <img src="{% static 'website/images/index4-1.jpg' %}" alt="#" />
+                        <div class="full text_align_left_img">
+                            <img src="{% static 'website/images/index5-1.jpg' %}" alt="#" />
+                            <br>
                         </div>
                     </div>
                 </div>
@@ -192,26 +193,27 @@
 
 
 	<!-- links to helpful resources section -->
-    <div class="section layout_padding padding_top_0">
-        <div class="container" style="padding: 10px; border-bottom: solid 1px #b01c1c">
+    <div class="section">
+        <div class="container" style=" padding: 5px; border-bottom: solid 1px #b01c1c">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="full">
-                        <div class="heading_main text_align_center center">
-                           <h2><span class="theme_color"></span>YOUR VOICE IN THE 2020 ELECTIONS</h2>
+                <div class="col-md-12" style ="text-align: center; width: 100%;">
+                    <div class="full paddding_left_15">
+                        <div class="heading_main text_align_center center" style = "padding-top: 35px;">
+                           <h2><span class="theme_color">Your Voice </span>in the 2020 Elections</h2>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="col-md-4 col-sm-6 col-xs-12" style ="padding-bottom: 20px;">
                     <a class="" href="https://vote.gov/">
                     <div class="full news_blog">
                        <img class="img-responsive" src="{% static 'website/images/b1.png' %}" alt="#" />
-                       <div class="overlay"></div>
+                        <div class="overlay"><a class="main_bt transparent" href="https://vote.gov/">vote.gov</a></div>
+                       <div class="overlay main_bt transparent"></div>
                        <div class="blog_details">
                          <h3>Register to Vote</h3>
-                         <p>Voter registration provides elgibility to vote in the upcoming election. Your Vote Counts.</p>
+                         <p>Voter registration provides eligibility to vote in the upcoming election. Your Vote Counts.</p>
                        </div>
                     </div>
                     </a>
@@ -220,7 +222,8 @@
                     <a class="" href="https://ballotpedia.org/Presidential_candidates,_2020">
                     <div class="full news_blog">
                         <img class="img-responsive" src="{% static 'website/images/b2.png' %}" alt="#" />
-                        <div class="overlay"></div>
+                        <div class="overlay"><a class="main_bt transparent" href="https://ballotpedia.org/Presidential_candidates,_2020/">ballotopedia.org</a></div>
+                        <div class="overlay main_bt transparent"></div>
                        <div class="blog_details">
                          <h3>Know your 2020 Candidates</h3>
                          <p>Americans will elect the next president of the United States on November 3, 2020.</p>
@@ -229,11 +232,12 @@
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
-                    <a class="" href="https://projects.fivethirtyeight.com/polls/">
+                    <a class="" href="https://www.cnn.com/election/2020/presidential-polls">
                     <div class="full news_blog">
                         <img class="img-responsive" src="{% static 'website/images/b3.png' %}" alt="#" />
-                        <div class="overlay"></div>
-                       <div class="blog_details">
+                        <div class="overlay"><a class="main_bt transparent" href="https://www.cnn.com/election/2020/presidential-polls">cnn.com</a></div>
+                        <div class="overlay main_bt transparent"></div>
+                        <div class="blog_details">
                          <h3>Follow Election Polls</h3>
                          <p>See the latest political polls and stay up to date with current data.</p>
                        </div>
@@ -245,8 +249,26 @@
     </div>
     <!-- end section -->
 
+    <!-- Start Footer -->
+    <footer class="footer-box">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-12 white_fonts">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="center_img">
+                                <img class="img-responsive" src="{% static 'website/images/footer_logo2.png' %}" alt="#" />
+                            </div>
+                        </div>
+                        </div>
+					</div>
+                </div>
+			 </div>
+        </div>
+    </footer>
 
-    <div class="footer_bottom">
+    <!-- End Footer -->
+    <div class="footer_bottom layout_padding">
         <div class="container">
             <div class="row">
                 <div class="col-12">

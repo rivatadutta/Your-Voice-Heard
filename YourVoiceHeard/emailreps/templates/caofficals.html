@@ -109,13 +109,67 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="banner_title">
-                        <h3>California Officals</h3>
+                        <h3>California Representatives</h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Banner -->
+    <!-- Content -->
+    <div class="section">
+        <div class="container">
+            <div class="card-group">
+                {% for rep in reps %}
+                    {% if forloop.counter0|divisibleby:3 %}
+                        </div>
+                        <div class="card-group">
+                    {% endif %}
+                        <div class="card text-dark font-weight-bold" style="{% if rep.party == 'Republican' %} background-color: #fa8072; {% elif rep.party == 'Democrat' %} background-color: #E0FFFF; {% endif %}">
+                        <div class="card-body">
+                        <h5 class="card-title text-dark">{{rep.rep_name}}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Party: {{rep.party}}</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">{{rep.district}} District</h6>
+                        <p class="card-text">Comittee(s): {{rep.comittee}}</p>
+                        <a href="{{rep.website}}" class="card-link">Website</a>
+                        </div>
+                    </div>
+                {% endfor %}
+                
+            </div>
+        </div>
+</div>
+
+    <!-- Start Banner -->
+    <div class="section inner_page_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner_title">
+                        <h3>California Senators</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+    <!-- Content -->
+    <div class="section">
+        <div class="container">
+            <div class="card-group">
+                {% for sen in sens %}
+                    <div class="card text-dark font-weight-bold" style="{% if sen.party == 'Republican' %} background-color: #fa8072; {% elif sen.party == 'Democrat' %} background-color: #E0FFFF; {% endif %}">
+                        <div class="card-body">
+                        <h5 class="card-title text-dark">{{sen.sen_name}}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Party: {{sen.party}}</h6>
+                        <a href="{{sen.website}}" class="card-link">Website</a>
+                        </div>
+                    </div>
+                {% endfor %}
+                
+            </div>
+        </div>
+</div>
 
     <!-- Start Footer -->
     <footer class="footer-box">
@@ -123,46 +177,11 @@
             <div class="row">
                <div class="col-md-12 white_fonts">
                     <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <img class="img-responsive" src="{% static 'website/images/footer_logo.png' %}" alt="#" />
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="center_img">
+                                <img class="img-responsive" src="{% static 'website/images/footer_logo2.png' %}" alt="#" />
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <h3>Quick Links</h3>
-                            </div>
-                            <div class="full">
-                                <ul class="menu_footer">
-                                    <li><a href="{% url 'emailreps:index' %}">> Home</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <div class="footer_blog full white_fonts">
-                             <h3>Newsletter</h3>
-                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                             <div class="newsletter_form">
-                                <form action="index.html">
-                                   <input type="email" placeholder="Your Email" name="#" required="">
-                                   <button>Submit</button>
-                                </form>
-                             </div>
-                         </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <div class="footer_blog full white_fonts">
-                             <h3>Contact us</h3>
-                             <ul class="full">
-                                <li><img src="{% static 'website/images/i5.png' %}"><span>California<br>United States</span></li>
-                                <li><img src="{% static 'website/images/i6.png' %}"><span>yourvoiceheard115@gmail.com</span></li>
-                                <li><img src="{% static 'website/images/i7.png' %}"><span>Number N/A</span></li>
-                             </ul>
-                         </div>
-                            </div>
                         </div>
 					</div>
                 </div>
@@ -175,7 +194,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="crp">© Copyrights 2019 design by html.design</p>
+                    <p class="crp">©Created by Students at University of California, Santa Cruz.</p>
                 </div>
             </div>
         </div>
