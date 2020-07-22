@@ -43,31 +43,29 @@
     <!-- LOADER -->
     <div id="preloader">
         <div class="loader">
-            <img src="images/loader.gif" alt="#" />
+            <img src="{% static 'website/images/loader.gif' %}" alt="#" />
         </div>
     </div>
     <!-- end loader -->
     <!-- END LOADER -->
 
-    <!-- Start header -->
+   <!-- Start header -->
+     <!-- Start header -->
     <header class="top-header">
         <div class="header_top">
-            
             <div class="container">
                 <div class="row">
                     <div class="logo_section">
-                        <a class="navbar-brand" href="{% url 'emailreps:index' %}"><img src="{% static 'website/images/logo.jpg' %}" alt="image"></a>
+                        <a class="navbar-brand" href="{% url 'emailreps:index' %}"><img src="{% static 'website/images/logo.png' %}" alt="image"></a>
                     </div>
                     <div class="site_information">
-                        <ul>
-                            <li><a href="mailto:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/mail_icon.png' %}" alt="#" />yourvoiceheard115@gmail.com</a></li>
-                            <li><a href="tel:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/phone_icon.png' %}" alt="#" />N/A</a></li>
-                            <li><a class="join_bt" href="{% url 'emailreps:results' %}">We need your voice</a></li>
+                        <ul style = "font-color: ##1f1f1f;">
+                            <li><a class="join_bt" href="mailto:yourvoiceheard115@gmail.com">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        
+
         </div>
         <div class="header_bottom">
           <div class="container">
@@ -82,14 +80,13 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link active" href="{% url 'emailreps:index' %}">Home</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:blm' %}">#BLM</a></li>
-                        <li><a class="nav-link" href="{% url 'emailreps:ice' %}">ICE</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:yemen' %}">Yemen</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:climatechange' %}">Climate Change</a></li>
                          <li><a class="nav-link" href="{% url 'emailreps:2020elections' %}">2020 Elections</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:caofficals' %}">About CA Officals</a></li>
-                        <li><a class="nav-link" href="{% url 'emailreps:proposeissues' %}">Propose Your Issues?</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:proposeissues' %}">Propose Issues Relevant to YOU</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:results' %}">Top Voted Issues</a></li>
                     </ul>
                 </div>
                      </div>
@@ -103,28 +100,18 @@
     <!-- End header -->
 
 
-    <!-- Start Banner -->
-    <div class="section inner_page_banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="banner_title">
-                        <h3>WE WANT YOUR VOICE</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Banner -->
-    
-   <!-- section -->
-    <div class="section layout_padding">
+
+
+
+    <div class="section">
+        <br><br><br><br><br>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="full">
-                        <div class="heading_main text_align_center">
-                           <h2><span class="theme_color"></span>Propose Your Issues</h2>    
+                        <div class="heading_main text_align_center" style="position: center; width:100%; display:inline;">
+                           <h3>What issues do you think are relevant?</h3>
+                            <h6 style ="font-size: 20px; font-color: #cc2020;"><i><br>Your Voice Heard hears your opinion. Submit issues our team can generate emails for.</i></h6>
                         </div>
                     </div>
                 </div>
@@ -134,15 +121,15 @@
     <!-- end section -->
 
     <!-- contact_form -->
-    <div class="section contact_form"  style="background: #111;">
+    <div class="section">
         <div class="container">
 			<div class="row">
-                <div class="col-md-6"  style="background: #111;">
-                    <div class="contact_form img" data-tilt style="background: #111;">
+                <div class="col-md-3" style="padding-right:50px;">
+                    <div class="img" data-tilt">
 							<img src="{% static 'website/images/contact_img.png' %}" alt="#" />
 					</div>
 				</div>
-					<div class="full">
+					<div class="col-md-9 full padding_left_15" style="padding-left:20px;">
                         <form class="contact_form_inner" action="{% url 'emailreps:post_issue' %}" method="POST" role="form">
                             {% csrf_token %}
                             <fieldset>
@@ -176,16 +163,16 @@
         </div>
     </div>
     <!-- end contact_form -->
-   
+
     <!-- Start Footer -->
     <footer class="footer-box">
         <div class="container">
             <div class="row">
                <div class="col-md-12 white_fonts">
                     <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <img class="img-responsive" src="{% static 'website/images/footer_logo.png' %}" alt="#" />
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="center_img">
+                                <img class="img-responsive" src="{% static 'website/images/footer_logo2.png' %}" alt="#" />
                             </div>
                         </div>
                         </div>
@@ -212,7 +199,7 @@
     <script src="{% static 'website/js/jquery.min.js' %}"></script>
 	<script src="{% static 'website/js/popper.min.js' %}"></script>
     <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
-	
+
     <!-- ALL PLUGINS -->
     <script src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
     <script src="{% static 'website/js/jquery.pogo-slider.min.js' %}"></script>
@@ -223,6 +210,6 @@
     <script src="{% static 'website/js/isotope.min.js' %}"></script>
     <script src="{% static 'website/js/images-loded.min.js' %}"></script>
     <script src="{% static 'website/js/custom.js' %}"></script>
-	
+
 </body>
 </html>

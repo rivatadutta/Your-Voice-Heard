@@ -50,20 +50,18 @@
     <!-- end loader -->
     <!-- END LOADER -->
 
+   <!-- Start header -->
     <!-- Start header -->
     <header class="top-header">
         <div class="header_top">
-
             <div class="container">
                 <div class="row">
                     <div class="logo_section">
-                        <a class="navbar-brand" href="{% url 'emailreps:index' %}"><img src="{% static 'website/images/logo.jpg' %}" alt="image"></a>
+                        <a class="navbar-brand" href="{% url 'emailreps:index' %}"><img src="{% static 'website/images/logo.png' %}" alt="image"></a>
                     </div>
                     <div class="site_information">
-                        <ul>
-                            <li><a href="mailto:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/mail_icon.png' %}" alt="#" />yourvoiceheard115@gmail.com</a></li>
-                            <li><a href="tel:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/phone_icon.png' %}" alt="#" />N/A</a></li>
-                            <li><a class="join_bt" href="{% url 'emailreps:vote' %}">We need your voice</a></li>
+                        <ul style = "font-color: ##1f1f1f;">
+                            <li><a class="join_bt" href="mailto:yourvoiceheard115@gmail.com">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -83,14 +81,13 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link active" href="{% url 'emailreps:index' %}">Home</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:blm' %}">#BLM</a></li>
-                        <li><a class="nav-link" href="{% url 'emailreps:ice' %}">ICE</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:yemen' %}">Yemen</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:climatechange' %}">Climate Change</a></li>
                          <li><a class="nav-link" href="{% url 'emailreps:2020elections' %}">2020 Elections</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:caofficals' %}">About CA Officals</a></li>
-                        <li><a class="nav-link" href="{% url 'emailreps:proposeissues' %}">Propose Your Issues?</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:proposeissues' %}">Propose Issues Relevant to YOU</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:results' %}">Top Voted Issues</a></li>
                     </ul>
                 </div>
                      </div>
@@ -103,19 +100,7 @@
     </header>
     <!-- End header -->
 
-    <!-- Start Banner -->
-    <div class="section inner_page_banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="banner_title">
-                        <h3>2020 Elections</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Banner -->
+
 
     <!---start section -->
     <!-- links to helpful resources section -->
@@ -126,7 +111,7 @@
                     <div class="full">
                         <div class="heading_main text_align_center">
                             <br><br>
-                           <h2><span class="theme_color"></span>YOUR VOICE IN THE 2020 ELECTIONS</h2>
+                           <h2><span class="theme_color"></span><br><br>YOUR VOICE IN THE 2020 ELECTIONS</h2>
                         </div>
                     </div>
                 </div>
@@ -139,7 +124,7 @@
                        <div class="overlay"></div>
                        <div class="blog_details">
                          <h3>Register to Vote</h3>
-                         <p>Voter registration (or enrollment) is the requirement that a person otherwise eligible to vote register (or enroll) on an electoral roll before they will be entitled or permitted to vote</p>
+                         <p>Voter registration provides eligibility to vote in the upcoming election. Your Vote Counts.</p>
                        </div>
                     </div>
                     </a>
@@ -179,9 +164,9 @@
             <div class="row">
                <div class="col-md-12 white_fonts">
                     <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <img class="img-responsive" src="{% static 'website/images/footer_logo.png' %}" alt="#" />
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="center_img">
+                                <img class="img-responsive" src="{% static 'website/images/footer_logo2.png' %}" alt="#" />
                             </div>
                         </div>
                         </div>

@@ -1,4 +1,3 @@
-
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +40,7 @@
 
 <body id="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
-    <!-- LOADER -->
+     <!-- LOADER -->
     <div id="preloader">
         <div class="loader">
             <img src="{% static 'website/images/loader.gif' %}" alt="#" />
@@ -51,19 +50,17 @@
     <!-- END LOADER -->
 
     <!-- Start header -->
+     <!-- Start header -->
     <header class="top-header">
         <div class="header_top">
-
             <div class="container">
                 <div class="row">
                     <div class="logo_section">
-                        <a class="navbar-brand" href="{% url 'emailreps:index' %}"><img src="{% static 'website/images/logo.jpg' %}" alt="image"></a>
+                        <a class="navbar-brand" href="{% url 'emailreps:index' %}"><img src="{% static 'website/images/logo.png' %}" alt="image"></a>
                     </div>
                     <div class="site_information">
-                        <ul>
-                            <li><a href="mailto:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/mail_icon.png' %}" alt="#" />yourvoiceheard115@gmail.com</a></li>
-                            <li><a href="tel:yourvoiceheard115@gmail.com"><img src="{% static 'website/images/phone_icon.png' %}" alt="#" />N/A</a></li>
-                            <li><a class="join_bt" href="{% url 'emailreps:vote' %}">We need your voice</a></li>
+                        <ul style = "font-color: ##1f1f1f;">
+                            <li><a class="join_bt" href="mailto:yourvoiceheard115@gmail.com">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -83,14 +80,13 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link active" href="{% url 'emailreps:index' %}">Home</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:blm' %}">#BLM</a></li>
-                        <li><a class="nav-link" href="{% url 'emailreps:ice' %}">ICE</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:yemen' %}">Yemen</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:climatechange' %}">Climate Change</a></li>
                          <li><a class="nav-link" href="{% url 'emailreps:2020elections' %}">2020 Elections</a></li>
                         <li><a class="nav-link" href="{% url 'emailreps:caofficals' %}">About CA Officals</a></li>
-                        <li><a class="nav-link" href="{% url 'emailreps:proposeissues' %}">Propose Your Issues?</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:proposeissues' %}">Propose Issues Relevant to YOU</a></li>
+                        <li><a class="nav-link" href="{% url 'emailreps:results' %}">Top Voted Issues</a></li>
                     </ul>
                 </div>
                      </div>
@@ -104,12 +100,25 @@
     <!-- End header -->
 
     <!-- Start Banner -->
-    <div class="section inner_page_banner">
+    <div class="section inner_page" style = "margin-top: 8%;">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="banner_title">
-                        <h3>BLACK LIVES MATTER</h3>
+                 <div class="col-md-12">
+                    <div class="full text_align_right_img" style = "margin-left: 3%;opacity: .20; border: solid 5px #990000; display: inline-block; z-index: -20px; ">
+                        <img src="{% static 'website/images/fist-2.jpg' %}" alt="#" />
+                        <img src="{% static 'website/images/fist-2.jpg' %}" alt="#" />
+                        <img src="{% static 'website/images/fist-2.jpg' %}" alt="#" />
+                    </div>
+                    <div style = "width: 100%; position: center;">
+                        <div class = "heading_main" style = "position: absolute; bottom: 63%;float: center; z-index: 50px; padding-top: 20px; text-shadow: 10px 5px 5px #cc2020; margin-top:10%; margin-bottom: -20px;">
+                        <br>
+                            <h3><strong><i>BLACK LIVES MATTER</i></strong></h3>
+                        </div>
+                        <div class = "heading_main p.large text_align_center" style = "padding-top: 10px; position: absolute; bottom: 4%;font-color: #000;margin-bottom: -20px;">
+                            <p><i><large><br><b>Email the <u><b><a href="#mayors">Mayor of Minneapolis</a></b></u> for justice in respect of <span style ="background: #990000;">George Floyd</span> <br><br>
+                                Email the <u><b><a href="#mayors">Mayor of Louisville</a></b></u> for Justice in respect of <span style ="background: #990000;">Breonna Taylor</span><br><br>
+                                Email your <u><b><a href="#local">Local Representatives</a></b></u> to<br> <span style ="background: #990000;">Combat Police Brutality</span> and Racial Profiling.<br><br><br></b></large></i></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,26 +126,95 @@
     </div>
     <!-- End Banner -->
 
-    <!-- section -->
-    <div class="section layout_padding about_bg">
-        <div class="container">
+
+    <div class="section" style ="margin-bottom:5%;">
+        <br><br><br>
+        <div class="container" style="padding: 15px; border-top: solid 1px #b01c1c; border-bottom: solid 1px #b01c1c">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="full paddding_left_15">
-                        <div class="heading_main text_align_left">
-                           <h2>About</h2>
-                        </div>
-                    </div>
-                    <div class="full paddding_left_15">
-                        <p id="source-text" class="text-light">Black Lives Matter (BLM) is an organized movement in the United States advocating for non-violent civil disobedience in protest against incidents of police brutality against African-American people.</p>
-                    </div>
-                    <div class="full paddding_left_15">
-                        <a class="main_bt" href="https://blacklivesmatter.com/">Read More ></a>
+                    <div class="full text_align_right_img">
+                        <br><br><img src="{% static 'website/images/blmpage-1.jpg' %}" alt="#" />
                     </div>
                 </div>
+                <div class="col-md-6 layout_padding">
+                    <div class="full padding_left_15">
+                        <div class="heading_main text_align_left">
+						   <h2>About the Movement</h2>
+                        </div>
+                    </div>
+                    <div class="full padding_left_15">
+                        <p class="text-light" id ="source-text">Black Lives Matter (BLM) is an organized movement in the United States advocating for non-violent civil disobedience in protest against incidents of police brutality against African-American people.</p>
+                    </div>
+                    <div class="full padding_left_15">
+                        <div class="main_bt" style = "font-color: #1f1f1f;">
+                            <a href="https://blacklivesmatter.com/">Read More ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- section -->
+    <div class="section" id ="local" style="background: rgb(0,0,0,.40);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="heading_main text_align_center" style="position: center; width:100%; display:inline;">
+                           <h3><br>Email Generator for Your Local Officials</h3>
+                            <h6 style ="font-size: 20px; font-color: #cc2020;"><i><br>Demand Change. Fight for Civil Rights.</i></h6>
+                        </div>
+                </div>
+
+                <!--generate email box -->
                 <div class="col-md-6">
-                    <div class="full text_align_right_img">
-                        <img src="{% static 'website/images/img3.png' %}" alt="#" />
+                    <div class="field">
+                        <textarea id ="message" rows="12" cols="50"></textarea>
+                    </div>
+                </div>
+
+                <!--fill out form-->
+                <div class="col-md-6">
+                    <div class="col-lg-9 col-sm-18">
+                            <div class="full">
+                                <form class="contact_form_inner" id="messageForm01" action="#">
+                                    <fieldset>
+                                        <div class ="field text_align_center">
+                                            <p> Click below to find your local representative based on your district</p>
+                                            <button type="button" onclick="location.href='https://www.house.gov/representatives/find-your-representative';">Your Representative</button>
+                                        </div>
+                                        <br>
+                                        <div class="field">
+                                            <input type="text" name="inputFirstName_01" placeholder="First Name" required />
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" name="inputLastName_01" placeholder="Last Name" required />
+                                        </div>
+                                        <div class="field">
+                                            <select id ="reps_select" name="reps_select">
+                                                <option value="disabledSelect" disabled selected>Your California Officials</option>
+                                                <optgroup label = "Senators">
+                                                    {% for sen in sens %}
+                                                        <option value="{{sen.sen_name}}">{{sen.sen_name}}</option>
+                                                    {% endfor %}
+                                                </optgroup>
+                                                <optgroup label = "Representatives">
+                                                    {% for rep in reps %}
+                                                        <option value="{{rep.rep_name}}">{{rep.rep_name}}</option>
+                                                    {% endfor %}
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                        <div class ="field text_align_center">
+                                                <br>
+                                                <button type="button" style = "background-color: #990000;" onclick="generateMessage(this.form)"><b>GENERATE MESSAGE</b></button>
+                                                <br>
+                                                <br>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -144,107 +222,130 @@
     </div>
     <!-- end section -->
 
-    <!-- section -->
-    <div class="section">
-        <div class="container">
+
+     <!-- Petitions-->
+      <div class="section" id ="blmpetitions" style ="margin-bottom:5%;">
+        <br><br><br>
+        <div class="container" style="padding: 15px; border-top: solid 1px #b01c1c; border-bottom: solid 1px #b01c1c">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="full text_align_right_img">
-                        <img src="{% static 'website/images/blmindex.jpg' %}" alt="#" />
-                    </div>
+                <div class="col-md-12">
+                        <div class="heading_main text_align_center">
+                            <br><br><br>
+						   <h2>Petitions</h2>
+                        </div>
                 </div>
-                <div class="col-md-6 layout_padding">
-                    <div class="full paddding_left_15">
-                        <div class="heading_main text_align_left">
-						   <h2><span class="theme_color">Please</span> Send A Message</h2>
+                    <div class="col-md-12">
+                    <div class="full padding_left_15">
+                    <div class="text_align_left" style = "background: rgb(204, 32, 32, .25); padding: 25px;">
+                        <h1><b>George Floyd</b><br></h1>
+                        <div class="row">
+                            <div class="col-md-3">
+                            <div class=" main_bt" style = "float: left; font-color: #1f1f1f;">
+                                <a href="https://www.change.org/p/mayor-jacob-frey-justice-for-george-floyd?recruiter=895898514&utm_source=share_petition&utm_medium=twitter&utm_campaign=psf_combo_share_initial&utm_term=psf_combo_share_initial&recruited_by_id=6a4669c0-a74d-11e8-a554-dd9015f4e479">Change.org ></a>
+                            </div>
+                            </div>
+                            <div class="col-md-3">
+                            <div class="main_bt" style = "float: center; position: center; font-color: #1f1f1f;">
+                                <a href="https://www.thepetitionsite.com/248/031/510/justice-for-george-floyd-another-black-man-needlessly-murdered-by-police/?taf_id=65858665&cid=fb_na">Petition.com ></a>
+                            </div>
+                            </div>
+                            <div class="col-md-3">
+                            <div class="main_bt" style = "float: center;position: center; font-color: #1f1f1f;">
+                                <a href=https://www.amnesty.org/en/get-involved/take-action/george-floyd-police-violence-usa/>Amnesty.org ></a>
+                            </div>
+                            </div>
+                            <div class="col-md-3">
+                             <div class="main_bt" style = "float: center;position: center; font-color: #1f1f1f;">
+                                <a href=https://act.colorofchange.org/sign/justiceforfloyd_george_floyd_minneapolis/?source=dm_sms_optin_5-26-20>ColorofChange.org ></a>
+                            </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="full paddding_left_15">
-                        <p class="text-light">Please send a message to let your voice be heard.</p>
                     </div>
-                    <div class="full paddding_left_15">
-                        <a class="main_bt" href="#">About more ></a>
+                    </div>
+
+                    <div class="col-md-12" style ="margin-top:30px;">
+                    <div class="full padding_left_15">
+                         <div class ="text_align_left" style = "background: rgb(204, 32, 32, .25); padding: 20px;">
+                        <h1><b>Breonna Taylor</b><br><br></h1>
+                             <div class="row">
+                         <div class="col-md-3">
+                            <div class="main_bt" style = "float: left; font-color: #1f1f1f;">
+                                <a href="https://www.change.org/p/mayor-jacob-frey-justice-for-george-floyd?recruiter=895898514&utm_source=share_petition&utm_medium=twitter&utm_campaign=psf_combo_share_initial&utm_term=psf_combo_share_initial&recruited_by_id=6a4669c0-a74d-11e8-a554-dd9015f4e479">Change.org ></a>
+                            </div>
+                         </div>
+                          <div class="col-md-3">
+                            <div class="main_bt" style = "float: center; position: center; font-color: #1f1f1f;">
+                                <a href="https://www.thepetitionsite.com/248/031/510/justice-for-george-floyd-another-black-man-needlessly-murdered-by-police/?taf_id=65858665&cid=fb_na">Petition.com ></a>
+                            </div>
+                          </div>
+                             <div class="col-md-3">
+                                <div class="main_bt" style = "float: center;position: center; font-color: #1f1f1f;">
+                                    <a href=https://www.amnesty.org/en/get-involved/take-action/george-floyd-police-violence-usa/>Amnesty.org ></a>
+                                </div>
+                             </div>
+                         <div class="col-md-3">
+                             <div class="main_bt" style = "float: center;position: center; font-color: #1f1f1f;">
+                                <a href=https://act.colorofchange.org/sign/justiceforfloyd_george_floyd_minneapolis/?source=dm_sms_optin_5-26-20>ColorofChange.org ></a>
+                            </div>
+                         </div>
+                         </div>
+                         </div>
+                    </div>
+                    </div>
+
+
+            <div class="col-md-12" style ="margin-top:30px;">
+                    <div class="full">
+                         <div class ="text_align_left" style = "background: rgb(204, 32, 32, .25); padding: 20px;">
+                        <h1><b>Other Petitions</b><br><br></h1>
+                             <div class="row">
+                         <div class="col-md-3">
+                            <div class="main_bt" style = "float: center; position:center; font-color: #1f1f1f;">
+                                <a href="https://www.change.org/p/governor-brian-kemp-justice-for-ahmaud-arbery">Georgia Hate<br> Crime Bill></a>
+                            </div>
+                         </div>
+                             <div class="col-md-3">
+                                <div class="main_bt" style = "float: center; position: center; font-color: #1f1f1f;">
+                                    <a href=https://www.amnesty.org/en/get-involved/take-action/george-floyd-police-violence-usa/>Amnesty.org ></a>
+                                </div>
+                             </div>
+                         <div class="col-md-3">
+                             <div class="main_bt" style = "float: center;position: center; font-color: #1f1f1f;">
+                               <a href=https://www.change.org/p/gouvernement-fran%C3%A7ais-refus-de-la-loi-visant-%C3%A0-emp%C3%AAcher-la-diffusion-des-images-de-violences-polici%C3%A8res?utm_content=cl_sharecopy_22450892_fr-FR%3Av5&recruiter=792266977&recruited_by_id=86f08ea0-9f58-11e7-961e-cda0813a4e4f&utm_source=share_petition&utm_medium=copylink&utm_campaign=psf_combo_share_abi&utm_term=psf_combo_share_abi>France Police Reform></a>
+                            </div>
+                         </div>
+
+                         <div class="col-md-3">
+                             <div class="main_bt" style = "float: center;position: center; font-color: #1f1f1f;">
+                               <a href=https://www.change.org/p/district-attorney-tom-durden-justice-for-ahmaud-arbery-i-run-with-maud?source_location=discover_feed>Ahmaud Arbery></a><br><br>
+                            </div>
+                         </div>
+                         </div>
+                         </div>
+                    </div>
+                    </div>
+        </div>
+            <br><br>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-	<!-- end section -->
-	
-	<!-- section -->
-    <div class="section white_fonts" style="background: #111;">
+
+
+      <!-- Email section -->
+    <div class="section" id ="mayors" style="background: rgb(0,0,0,.40);">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 layout_padding">
-                    <div class="full paddding_left_15">
-                        <div class="heading_main text_align_left">
-                           <h2>Your Message</h2>    
+                <div class="col-md-12">
+                        <div class="heading_main text_align_center" style="position: center; width:100%; display:inline;">
+                           <h3><br>Email Out of State Officials</h3>
+                            <h6 style ="font-size: 20px; font-color: #cc2020;"><i><br>Say their Names. Ask for Justice.</i></h6>
                         </div>
-                    </div>
-                    <div class="field">
-                        <textarea id ="message" name="message" rows="12" cols="50"></textarea>
-                    </div>
                 </div>
-                <div class="col-md-6 layout_padding">
-                    <div class="full paddding_left_15">
-                        <div class="heading_main text_align_left">
-                           <h2>Generate Your Message</h2>    
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-sm-18">
-                    <div class="full">
-                        <form class="contact_form_inner" id="messageForm01" action="#">
-                            <fieldset>
-                                <div class="field">
-                                    <input type="text" name="inputFirstName_01" placeholder="First Name" required />
-                                </div>
-                                <div class="field">
-                                    <input type="text" name="inputLastName_01" placeholder="Last Name" required />
-                                </div>
-								<div class="field">
-									<select id ="reps_select" name="reps_select">
-										<option value="disabledSelect" disabled selected>Your California Officials</option>
-										<optgroup label = "Senators">
-											{% for sen in sens %}
-												<option value="{{sen.sen_name}}">{{sen.sen_name}}</option>
-											{% endfor %}
-										</optgroup>
-										<optgroup label = "Representatives">
-											{% for rep in reps %}
-												<option value="{{rep.rep_name}}">{{rep.rep_name}}</option>
-											{% endfor %}
-										</optgroup>
-									</select>
-								</div>
-                                <div class="field">
-									 <button type="button" onclick="location.href='https://www.usa.gov/elected-officials';">YOUR OFFICIALS</button>
-									 <p> </p>
-                                     <button type="button" onclick="generateMessage(this.form)">GENERATE</button>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                    </div>
-					</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
-	
-    <!-- Email section -->
-    <div class="section white_fonts" style="background: #111;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 layout_padding">
-                    <div class="full paddding_left_15">
-                        <div class="heading_main text_align_left">
-                           <h2>Email To Help The Cause</h2>    
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-sm-18">
-                    <div class="full">
-                        <form class="contact_form_inner" id="messageForm02" action="#">
+                <div class="col-md-12 col-lg-9 col-sm-18">
+                    <div class="text_align_center">
+                        <form class="contact_form_inner" style="width:100%; margin-left: 20%;" id="messageForm02" action="#">
                             <fieldset>
                                 <div class="field">
                                     <input type="text" name="inputFirstName_02" placeholder="First Name" required />
@@ -260,7 +361,7 @@
 									</select>
 								</div>
                                 <div class="field">
-                                     <button type="button" onclick="generateEmail(this.form)">EMAIL</button>
+                                    <br> <button type="button" onclick="generateEmail(this.form)">EMAIL</button><br><br><br>
                                 </div>
                             </fieldset>
                         </form>
@@ -272,23 +373,23 @@
     </div>
     <!-- end section -->
 
-    <!-- Start Footer -->
+     <!-- Start Footer -->
     <footer class="footer-box">
         <div class="container">
             <div class="row">
                <div class="col-md-12 white_fonts">
                     <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <img class="img-responsive" src="{% static 'website/images/footer_logo.png' %}" alt="#" />
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="center_img">
+                                <img class="img-responsive" src="{% static 'website/images/footer_logo2.png' %}" alt="#" />
                             </div>
                         </div>
                         </div>
 					</div>
                 </div>
 			 </div>
-        </div>
     </footer>
+
     <!-- End Footer -->
 
     <div class="footer_bottom">
