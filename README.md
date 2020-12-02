@@ -4,7 +4,7 @@
 No file/document in this project is to be used or redistributed for any purpose. This is a private project created by students at University of California, Santa Cruz. 
 
 ## About
-"Your Voice Heard" provides users with resources to practice online social activism in Black Lives Matter movements, climate justice, and other current, relevant movements. Relevant movements were constantly updated per user requests. (Example of previous movements: Petition of ICE Directive to Deport International Students).  
+"Your Voice Heard" provides users with resources to practice online social activism in Black Lives Matter movements, climate justice, and other current, relevant movements. Relevant movements were constantly updated per user requests.
 ```
 Features included:
   1. Links to petitions
@@ -15,7 +15,7 @@ Features included:
 
 ## Website Demo
 "Your Voice Heard" Homepage 
-Social Issues focused on included: BLM, Climate Justice, and Yemen.
+Movements focused on included: BLM and Climate Justice. Movements updated with respect to current social climate. (Example of Previous movements included: Petition of ICE Directive to Deport International Students)
 
 ![Homepage](https://lh3.googleusercontent.com/pw/ACtC-3dEerXz229oKW7ieljT6GV9IaZ7GwHMB9RbvWvIgCCFdfV1-q1-axMU_xxWxdVsJ9kJprf1Tfz7Tx--pEcdEVhRsDnhOydakK8e1Ep4M08XI4ONQp9hsqi32NToo1OE4bCfZS_s6khOT4R6I0LpGxbZ_g=w512-h232-no?authuser=0)
 
