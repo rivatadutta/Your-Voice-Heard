@@ -3,7 +3,7 @@
 > Copyright 2020. No file/document in this repo is to be used or redistributed for any purpose. Private project created by students at University of California, Santa Cruz. 
 
 ## About
-"Your Voice Heard" provides users with resources to practice online social activism in Black Lives Matter movements, climate justice, and other current, relevant movements. Relevant movements were constantly updated per user requests. 
+Social justice website that provides social activists with resources to practice online social activism in Black Lives Matter movements, climate justice, and other current, relevant movements. Relevant movements were constantly updated per user requests. 
 
 ## Features
   1. Links to petitions for respective movement
