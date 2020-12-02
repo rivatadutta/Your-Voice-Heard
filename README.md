@@ -1,15 +1,17 @@
 # Your-Voice-Heard
+
 ## Copyright 2020
 No file/document in this project is to be used or redistributed for any purpose. This is a private project created by students at University of California, Santa Cruz. 
 
 ## About
 "Your Voice Heard" provides users with resources to practice online social activism in Black Lives Matter movements, climate justice, and other current, relevant movements. Relevant movements were constantly updated per user requests. (Example of previous movements: Petition of ICE Directive to Deport International Students).  
-
+```
 Features included:
   1. Links to petitions
   2. Automatic email service to email California senators in support of the movement of choice
   3. Information on current social issues
   4. User voting forum to propose and vote on current, relavent movements to be added to the website.
+ ```
 
 ## Website Demo
 "Your Voice Heard" Homepage 
