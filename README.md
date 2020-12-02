@@ -5,13 +5,13 @@ No file/document in this project is to be used or redistributed for any purpose.
 
 ## About
 "Your Voice Heard" provides users with resources to practice online social activism in Black Lives Matter movements, climate justice, and other current, relevant movements. Relevant movements were constantly updated per user requests.
-```
-Features included:
+
+## Features included:
   Links to petitions for respective movement
   Automatic email service to email California senators in support of the movement of choice
   Information on current social issues
   User voting forum to propose and vote on current, relavent movements to be added to the website.
- ```
+
 
 
 # Website Demo
