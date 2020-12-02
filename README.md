@@ -13,7 +13,9 @@ Features included:
   User voting forum to propose and vote on current, relavent movements to be added to the website.
  ```
 
+
 # Website Demo
+
 ## Homepage 
 Movements focused on included: BLM and Climate Justice. Movements updated with respect to current social climate. (Example of Previous movements included: Petition of ICE Directive to Deport International Students)
 
