@@ -23,11 +23,13 @@ Movements focused on included: BLM and Climate Justice. Movements updated with r
 
 
 ## Social Issues Featured
-Every social issue page had its own unique "about me" sections.
+Every social issue page had its own unique "about me", "petition", and "email generator" section.
 
 BLM Page:
 
 ![BLM Page](https://lh3.googleusercontent.com/uTLEHpG6-5sn2WWkm7W_8rr3bu1Kvce-unvF8LyCw5lqtxKtYUFZl-7UdBk036niQDjrWvcuuNe59nQ4ueWoKhYFsmeuWqoPUCovOorZR7wVIY94YCEwEqq8J0j3S7DES4DgwbK_4r4bNUcBnRCoC5Y0iJfaCKtiFEs2R5CzG3wU3Mq4u5ydeKR7h4mMK-h970kaHLdcKaPZmlPNOU0h49k7uRbajmbKq9jz1WWZ4opmmM8jI85f5eNomJjz2Ag4Cxy6VGuXCK7o3lf0Cq0DIww14zqBXcbQR4L8G_plJoiXwxPqW8bdwaMwol7RpRwe8x1r4X6dw6Sam4XzsvAAJXPIx1s5ZuGkWuuOlJ3X_u3WADGq2VuQWk6g2UjLqaH_rfW7vUWQ3bJtejOzFha7deiIPR6gJmL2rSjsKH_To9V_Hm_KRLLl3ZMEM9eS-1ICLg2oGhD6nX6uIMJnauaJyA5N02wfR6h7mbJVFDGQtQdOFm7EKCWAygT-Yk9c7sxkJuyQyXkjIEZ17t3ThDhMexxdhm_3QOkzM67PLMyn3WLVQdYgrgS6gpqAxQh2Uket2C9qN5yNQ1CGaACWG7xZJdsUQ00f4LSfU9I5b9JMDlJrM0jg3admM2JhmnomSUV_wOKOPwTdMx_vHzLnkWRwXMYiv99UqDclq0_h9nFaBIXKDy6yJHHXtsC7f_nfQg=w732-h568-no?authuser=0)
+
+![BLM Page](https://lh3.googleusercontent.com/pw/ACtC-3eToq7QsyGOzUTryS48XvFE821zxCryDgRL74GErRYsETzHyiNY3wVBTAY2fOtxH0KqBil2OatTNFipdELchL1QS3QJRmkEDtyTf139P874ifCKwB_2F5JIN-Q67oCEM1Bs0ooRHs6co6UgovpeBcUSew=w927-h568-no?authuser=0)
 
 Climate Change Page: 
 
