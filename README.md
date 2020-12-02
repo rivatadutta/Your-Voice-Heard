@@ -44,7 +44,7 @@ Propose Issue Feature:
 
 Vote on Proposed Issues Page:
 
-![Vote Issues Page](https://photos.google.com/share/AF1QipNXPzlKPw2klPgNBeC1-H3ZVGWtKoo9fetvxGWiR6HDLn_Wb5UFXBYlVGXthUZXVA/photo/AF1QipMJhM58K30XvaYuSN2lRNaGx2OQOQ8l5M62iRJi?key=aVB6NWk4REEzVjNKMXV3SG5EM3JOOHZyczZlTU9B)
+![Vote Issues Page](https://lh3.googleusercontent.com/pw/ACtC-3daGE2ofjqX7b97fLSWfCu4hn7WeL_IvwShCi6DNklN8WWkPj0zW6rw_W5UVjuA0Tlc1DKgr0rNbJNDnPFLz1jNCCaCpcca0OXpBGzrQT9FJQqf2zpBYXfcHvXe_0B_dcgpB7sIs07wBCFGA0GCLQmbWQ=w1169-h568-no?authuser=0)
 
 ## Prerequisites
 1. Python 3.8.3
