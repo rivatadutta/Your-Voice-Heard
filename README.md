@@ -67,4 +67,4 @@ python manage.py runserver
 > Note: Additional modification required for changing the db used.
 
 ## Copyright 2020
-No file/document in this project is to be used or redistributed for any purpose. This is a private project created by students at University of California, Santa Cruz. 
+This is a private project created by students at University of California, Santa Cruz. 
