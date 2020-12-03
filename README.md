@@ -1,6 +1,6 @@
 # Your-Voice-Heard
 
-> Copyright 2020. No file/document in this repo is to be used or redistributed for any purpose. Private project created by students at University of California, Santa Cruz. 
+> Copyright 2020. Private project created by students at University of California, Santa Cruz. 
 
 ## About
 Social justice website that provides social activists with resources to practice online social activism in Black Lives Matter movements, climate justice, and other current, relevant movements. Relevant movements were constantly updated per user requests. 
