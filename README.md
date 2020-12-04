@@ -49,9 +49,10 @@ Users could propose social issues that they believed to be socially relevant. Us
 
 ![Vote Issues Page](https://lh3.googleusercontent.com/pw/ACtC-3daGE2ofjqX7b97fLSWfCu4hn7WeL_IvwShCi6DNklN8WWkPj0zW6rw_W5UVjuA0Tlc1DKgr0rNbJNDnPFLz1jNCCaCpcca0OXpBGzrQT9FJQqf2zpBYXfcHvXe_0B_dcgpB7sIs07wBCFGA0GCLQmbWQ=w1169-h568-no?authuser=0)
 
-## Prerequisites
-1. Python 3.8.3
-2. pip 19.2.3
+## Built with
+Django Framework
+HTML/CSS
+
 ## Running Instructions
 
 1. Clone the repository
